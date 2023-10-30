@@ -102,7 +102,7 @@ a {
   list-style: none;
 }
 .nav-menu ul li {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 .nav-menu ul li a {
   color: #191919;
@@ -114,7 +114,7 @@ a {
   font-size: 25px;
 }
 .nav-menu .page-menu {
-  margin: 60px 40px 30px;
+  margin: 60px 40px 15px;
 }
 .nav-menu .social-menu {
   margin-left: 40px;
@@ -163,7 +163,7 @@ a {
   padding-top: 150px;
 }
 .home-page .hero h1 {
-  font-size: 50px;
+  font-size: 45px;
   line-height: 75px;
 }
 .home-page .hero h1 span {
@@ -195,6 +195,9 @@ a {
 }
 .home-page .hero .hover-btn svg {
   margin-left: 30px;
+}
+.home-page .overlay {
+  display: none;
 }
 .home-page .home-aboutme {
   border-bottom: 1px solid #191919;
@@ -306,6 +309,7 @@ a {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  color: #191919;
 }
 .home-page .home-projects .project-info .button-box #right {
   flex: 1;
@@ -316,6 +320,7 @@ a {
   border-bottom-right-radius: 50px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  color: #191919;
 }
 .home-page .home-projects .project-image {
   position: absolute;
@@ -428,6 +433,7 @@ footer .copyright {
   text-transform: uppercase;
 }
 .project-page .project-container .project button {
+  display: none;
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -451,20 +457,16 @@ footer .copyright {
 .project-page .project-container .project button svg {
   margin-left: 30px;
 }
-.project-page .project-container .project:hover #project-show {
-  opacity: 1;
-  visibility: visible;
-}
-.project-page .project-container .project:hover h3 {
-  padding-left: 50px;
-}
 .project-page .project-container .project .skills-container {
-  margin-right: 40px;
+  margin-right: 12px;
   font-size: 15px;
   color: #8D8D8D;
 }
+.project-page .project-container .project .skills-container p {
+  width: 95px;
+}
 .project-page .project-container .project h3 {
-  font-size: 33px;
+  font-size: 26px;
   font-weight: 300;
   transition: all 0.9s ease;
 }
@@ -996,6 +998,38 @@ footer .copyright {
     display: flex;
     align-items: center;
     text-transform: uppercase;
+  }
+  .project-page .project-container .project button {
+    display: block;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #191919;
+    background-image: url(../../../image/button-bg-fill.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    padding: 13px 30px;
+    cursor: pointer;
+  }
+  .project-page .project-container .project button:hover {
+    background-position: center;
+    color: #F7F6F1;
+  }
+  .project-page .project-container .project button:hover a {
+    color: #F7F6F1;
+  }
+  .project-page .project-container .project button svg {
+    margin-left: 30px;
+  }
+  .project-page .project-container .project:hover #project-show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .project-page .project-container .project:hover h3 {
+    padding-left: 50px;
   }
   .project-page .project-container .project .skills-container {
     margin-right: 40px;
