@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Colour
+$black-color : #191919;
+$beige-color : #F7F6F1;
+$grey-color : #8D8D8D;
+
+// Mixins
+@mixin button-style {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid $black-color;
+    background-image: url(../../../image/button-bg-fill.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    padding: 13px 30px;
+    cursor: pointer;
+    
+    &:hover {
+        background-position: center;
+        color: $beige-color;
+        a {
+            color: $beige-color;
+        }
+    }
+    
+    svg {
+        margin-left: 30px;
+    }
+
+}
+
+@mixin button-light-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid $beige-color;
+    background-image: url(../../../image/button-bg-fill-light.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    padding: 13px 30px;
+    color: $beige-color;
+    cursor: pointer;
+    
+
+    &:hover {
+        background-position: center;
+        color: $black-color;
+        a {
+            color: $black-color;
+        }
+    }
+    
+    svg {
+        margin-left: 30px;
+    }
+}

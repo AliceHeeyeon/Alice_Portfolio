@@ -1,0 +1,206 @@
+@media screen and (min-width: 768px) {
+
+    //home
+    .home-page {
+        .hero {
+            // position: relative;
+            padding-inline: 40px;
+            margin-top: 282px;
+            padding-bottom: 80px;
+            border-bottom: 1px solid $black-color;
+
+            h1 {
+                font-size: 90px;
+                line-height: 130px;
+            }
+
+            .hover-btn {
+                position: absolute;
+                bottom: -68px;
+                right: 0px;
+            }
+        }
+
+        .overlay {
+            .hover-btn2 {
+                position: absolute;
+                bottom: 0px;
+                right: 16px;
+            }
+        }
+
+        .home-aboutme {
+            img {
+                width: 100%;
+                height: 500px;
+                padding: 40px;
+            }
+
+            .button-container {
+                justify-content: flex-end;
+                margin-right: 40px;
+            }
+
+            
+        }
+    }
+
+    // Nav menu
+    .background-filter {
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100vw;
+        height: 100vh;
+    
+    }
+    .nav-menu {
+        position: absolute;
+        display: grid;
+        grid-auto-rows: min-content;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        background-color: $beige-color;
+        width: 400px;
+        height: 100vh;
+        font-size: 22px;
+
+        ul {
+            list-style: none;
+            li {
+                margin-bottom: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: $black-color;
+                }
+            }
+        }
+
+        .nav-close {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 25px;
+        }
+
+        .page-menu {
+            margin : 60px 40px 30px;
+            
+        }
+
+        .social-menu {
+            color: #8D8B8B;
+            margin-left: 40px;
+        }
+
+        .nav-email {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top: 1px solid $black-color;
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+
+    // Footer
+    footer {
+
+        .footer-menu {
+
+            ul {
+                font-size: 20px;
+
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .back-to-top {
+                display: block;
+                font-size: 20px;
+                font-weight: 100;
+            }
+        }
+
+        .footer-email {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 80px;
+
+            p {
+                font-size: 90px;
+                margin: 0;
+            }
+            
+        }
+
+    }
+
+     // Single Project
+    .single-page {
+
+        h2 {
+            font-size: 90px;
+        }
+
+        h4 {
+            font-size: 30px;
+        }
+
+        .page-images {
+            height: 640px;
+            img {
+                height: 638px;
+            }
+        }
+
+        .page-description {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            p {
+                font-size: 25px;
+                line-height: 60px;
+                margin-top: 0px;
+            }
+        }
+
+        .page-feature {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            ul {
+                li {
+                    font-size: 25px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .tryapp {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            button {
+                width: fit-content;
+                margin: 0px 0px 50px;
+            }
+        }
+
+    }
+
+    // About
+    #about-image {
+        height: 600px;
+    }
+
+
+
+} // end of query

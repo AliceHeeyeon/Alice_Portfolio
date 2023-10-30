@@ -1,0 +1,669 @@
+body {
+    background: $beige-color;
+    color: $black-color;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $black-color;
+    transition: 1.5s ease;
+}
+
+
+
+// nav bar
+.topnav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $beige-color;
+    .nav-desktop {
+        display: none;
+        grid-template-columns: 180px auto 200px;
+        border-bottom: 1px solid $black-color;
+
+        .menu-icons {
+            display: flex;
+            align-items: center;
+            padding: 20px 0px 20px 40px;
+            border-right: 1px solid black;
+            cursor: pointer;
+
+            svg {
+                font-size: 30px;
+            }
+            span {
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            a {
+                text-decoration: none;
+                color: $black-color;
+            }
+        }
+        
+        .time {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 40px;
+            font-size: 18px;
+
+            span {
+                margin-inline: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .nav-mobile {
+        display: flex;
+        padding: 20px 30px;
+        border-bottom: 1px solid $black-color;
+        justify-content: space-between;
+
+        .hambuger-icon {
+            display: flex;
+            align-self: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .logo-mobile {
+            font-size: 20px;
+            a {
+                color: $black-color;
+            }
+        }
+    }
+}
+
+// Nav menu
+.nav-menu {
+    position: absolute;
+    display: grid;
+    grid-auto-rows: min-content;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: $beige-color;
+    width: 100vw;
+    height: 100vh;
+    font-size: 22px;
+
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 25px;
+
+            a {
+                color: $black-color;
+            }
+        }
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 25px;
+    }
+
+    .page-menu {
+        margin : 60px 40px 30px;
+        
+    }
+
+    .social-menu {
+        margin-left: 40px;
+        a {
+            color: #8D8B8B;
+        }
+    }
+
+    .nav-email {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid $black-color;
+        width: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            @include button-style;
+        }
+    }
+
+}
+
+
+// Home
+.home-page {
+    .hero {
+        width: 100vw;
+        padding-inline: 40px;
+        padding-top: 150px;
+
+        h1 {
+            font-size: 50px;
+            line-height: 75px;
+
+            span {
+                display: block;
+                font-weight: 400;
+            }
+        }
+
+        .hover-btn {
+            @include button-style;
+            margin-top: 60px;
+            margin-bottom: 100px;
+
+        }
+    }
+
+    .overlay {
+        background-color: $black-color;
+        color: $beige-color;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        clip-path: circle(120px at 50% 50%);
+        clip-path: circle(120px at var(--x, 50%) var(--y, 50%));
+        transition: clip-path 100ms;
+
+        .hover-btn2 {
+            @include button-light-style;
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        a {
+            color: beige;
+        }
+    }
+
+    .home-aboutme {
+        border-bottom: 1px solid $black-color;
+        img {
+            width: 100vw;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: 24px;
+            padding-inline: 40px;
+            line-height: 50px;
+            margin-top: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 80px;
+
+            button {
+                @include button-style;
+            }
+
+        }
+    }
+
+    .home-projects {
+       display: grid;
+       position: relative;
+        border-bottom: 1px solid $black-color;
+        .project-info {
+            padding-top: 540px;
+            padding-bottom: 80px;
+            display: grid;
+            justify-content: center;
+
+            .info-box {
+                text-align: center;
+                p {
+                    color: #8D8B8B;
+                    margin-bottom: 20px;
+                }
+                h5 {
+                    text-transform: uppercase;
+                    font-size: 25px;
+                    font-weight: 300;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .button-box {
+                display: flex;
+                border: 1px solid $black-color;
+                border-radius: 50px;
+                width: 200px;
+                margin-top: 20px;
+
+                button {
+                    @include button-style;
+                }
+                
+                #left {
+                    flex: 1;
+                    padding: 10px;
+                    border: none;
+                    border-right: 1px solid $black-color;
+                    font-size: 25px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                }
+
+                #right {
+                    flex: 1;
+                    padding: 10px;
+                    border: none;
+                    font-size: 25px;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
+
+            }
+        }
+        .project-image {
+            position: absolute;
+            top: 0;
+            height: 470px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    position: relative;
+    padding: 50px 40px 110px;
+    background-color: $black-color;
+    color: $beige-color;
+
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style: none;
+            font-weight: 300;
+            font-size: 18px;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: $beige-color;
+            }
+        }
+
+        .back-to-top {
+            display: none;
+            cursor: pointer;
+        }
+    }
+
+    .footer-email {
+        p {
+            font-size: 50px;
+            margin-top: 60px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: $beige-color;
+        }
+
+        #email-cta {
+            @include button-light-style;
+        }
+        
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid $beige-color;
+        text-align: center;
+        padding: 15px 0px 30px;
+        font-weight: 200;
+    }
+}
+
+// Projects page
+.page-container {
+    margin-top: 70px;
+}
+
+.project-page {
+    
+    h4 {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid $black-color;
+        font-size: 20px;
+    }
+
+    .project-container {
+        padding: 40px;
+        border-bottom: 1px solid $black-color;
+
+        a {
+            color: $black-color;
+        }
+
+        .more-coming {
+            font-size: 30px;
+            color: $grey-color;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+
+            button {
+                @include button-style;
+            }
+
+            &:hover {
+              
+                #project-show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                h3 {
+                    padding-left: 50px;
+                }
+            }
+
+            .skills-container {
+                margin-right: 40px;
+                font-size: 15px;
+                color: $grey-color;
+            }
+
+            h3 {
+                font-size: 33px;
+                font-weight: 300;
+                transition: all 0.9s ease;     
+            }
+
+            #project-show {
+                padding: 6px 20px;
+                margin-left: 20px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+
+                #right-arrow {
+                    margin: 0;
+                }
+            }
+            
+        }
+
+    }
+
+    .project-image{
+        display: none;
+    }
+    
+}
+
+// Single Project
+.single-page {
+
+    h2 {
+        font-size: 50px;
+        font-weight: 300;
+        padding: 80px 40px 20px;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+
+    .page-images {
+        height: 400px;
+        border-top: 1px solid $black-color;
+        border-bottom: 1px solid $black-color;
+        img {
+            width: 100%;
+            height: 398px;
+            object-fit: cover;
+        }
+    }
+
+    .page-description {
+        padding: 50px 40px;
+
+        p {
+            color: #4c4c4c;
+            font-size: 20px;
+            line-height: 45px;
+            margin-top: 45px;
+        }
+    }
+
+    .page-feature {
+        padding: 50px 40px 60px;
+
+        h4 {
+            margin-bottom: 45px;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                color: #4c4c4c;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+            
+    }
+
+    button {
+        @include button-style;
+        margin: 0px 40px 60px;
+    }
+
+}
+
+// Contact me
+.contact-image {
+    border-top: 1px solid $black-color;
+    border-bottom: 1px solid $black-color;
+    height: 400px;
+    padding: 40px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.contact-info {
+    padding: 15px 40px;
+
+    .section {
+        height: 130px;
+        border-bottom: 1px solid $black-color;
+        padding-top: 15px;
+
+        h4{
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: $grey-color;
+            margin-bottom: 6px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .contact-phone {
+        border: none;
+    }
+
+}
+
+// About
+#about-image {
+    padding: 40px;
+    height: 450px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Email form
+.email-form-wrapper {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(169, 165, 149, 0.697);
+
+    .email-me {
+        position: fixed;
+        top: 0;
+        right:0;
+        max-width: 500px;
+        height: 100vh;
+        background-color: $black-color;
+        color: $beige-color;
+
+        .email-header {
+            display: flex;
+            height: 70px;
+            padding-inline: 40px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $beige-color;
+
+            h3 {
+                font-size: 26px;
+                font-weight: 300;
+            }
+
+            .close-form {
+                font-size: 16px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 5px;
+                }
+                a {
+                    color: $beige-color;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        form {
+           
+            .form-section {
+                display: flex;
+                justify-content: center;
+                margin: 50px 40px;
+                
+                .label {
+                    width: 110px;
+                    label {
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+                }
+
+                input,
+                textarea {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid $beige-color;
+                    width: 280px;
+                    color: $beige-color;
+                    font-size: 17px;
+                }
+
+                textarea {
+                    height: 120px;
+                }
+
+            }
+            .email-submit {
+                display: flex;
+                justify-content: end;
+                margin-right: 40px;
+            }
+
+            button {
+                @include button-light-style;
+            }
+          
+        }
+    }
+   
+    .success-message,
+    .error-message {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        margin-top: 30px;
+        font-size: 20px;
+        margin-inline: 40px;
+
+        img {
+            margin-right: 10px;
+            object-fit: contain;
+        }
+    }
+    
+}

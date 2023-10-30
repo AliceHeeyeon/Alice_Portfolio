@@ -1,0 +1,48 @@
+[{
+    "id": 0,
+    "title" : "staysavvy",
+    "type" : "individual",
+    "date" : "JUN 2023",
+    "skills" : ["javascript", "UX design"],
+    "description" : "This app is designed to allow users to search for accommodations, calculate the distance between their starting point and destination, and provide an estimate of expenses including transportation costs. This enables users to book accommodations within their budget.",
+    "features" : ["Searching by keywords", "Displaying results using Mapbox", "Calculating fuel costs", "Dark mode toggle"],
+    "image" : {
+        "main-image": "../../image/staysavvy1.png",
+        "sub-image-1": "../../image/staysavvy2.png",
+        "sub-image-2": "../../image/staysavvy3.png"
+    },
+    "url" : "https://staysavvy.vercel.app/"
+},
+{
+    "id": 1,
+    "title" : "WUX Project",
+    "type" : "Team",
+    "date" : "AUG 2023",
+    "skills" : ["react", "full-stack"],
+    "description" : "This platform serves as a hub for students to showcase their complete projects while also providing a convenient space to explore the works of their peers.",
+    "features" : ["Sign up and Log In", "Project Upload", "Project Edit and Delete", "Warning message for Deletion", "Displaying chosen user’s projects"],
+    "image" : {
+        "main-image": "../../image/wux1.png",
+        "sub-image-1": "../../image/wux2.png",
+        "sub-image-2": "../../image/wux3.png",
+        "sub-image-3": "../../image/wux4.png",
+        "sub-image-4": "../../image/wux5.png"
+    },
+    "url":"https://github.com/AliceHeeyeon/Summative-Alice_Annika_Deepak_Ethan_Yasser"
+},
+{
+    "id": 2,
+    "title" : "Aurea",
+    "type" : "Team",
+    "date" : "SEP 2023",
+    "skills" : ["react", "full-stack"],
+    "description" : "This is a third party jewelry market place platform to assist individual designers who were facing challenges in creating their own platforms.",
+    "features" : ["Sign up and Log In", "Product Upload", "Wish list Management", "Shopping Cart functionality", "Product Comments", "Vendor Comment Management"],
+    "image" : {
+        "main-image": "../../image/aurea1.png",
+        "sub-image-1": "../../image/aurea2.png",
+        "sub-image-2": "../../image/aurea3.png",
+        "sub-image-3": "../../image/aurea4.png"
+    },
+    "url":"https://github.com/AliceHeeyeon/Formative3.2_Alice_Ryan_Maria_Yasser"
+}]

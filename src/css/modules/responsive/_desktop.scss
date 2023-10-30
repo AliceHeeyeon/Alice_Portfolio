@@ -1,0 +1,198 @@
+@media screen and (min-width: 992px) {
+
+    button {
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+    
+    //nav bar
+    .topnav {
+        .nav-desktop {
+            display: grid;
+        }
+    
+        .nav-mobile {
+            display: none;
+        }
+    }
+
+    //home
+    .home-page {
+        .hero {
+            margin: 0;
+            padding: 260px 40px 60px;
+
+            h1 {
+                font-size: 110px;
+                line-height: 160px;
+                width: 80%;
+            }
+
+            button {
+                bottom: -10px;
+                right: 40px;
+            }
+        }
+
+        .home-aboutme {
+            display: flex; 
+
+            img {
+                width: 50vw;
+                height: 550px;
+            }
+
+            .home-about-text {
+                position: relative;
+
+                p {
+                    font-size: 29px;
+                    line-height: 60px;
+                }
+
+                .button-container {
+                    position: absolute;
+                    right: 40px;
+                    bottom: 40px;
+                    margin: 0;
+                }
+            }    
+        }
+
+        .home-projects {
+            grid-template-columns: 300px 1fr;
+            height: 100vh;
+            .project-info {
+                border-right: 1px solid $black-color;
+                padding: 60px 40px 70px;
+                justify-content: start;
+    
+                .info-box {
+                    text-align: start;
+                  
+                    h5 {
+                        font-size: 27px;
+                    }
+                }
+    
+                .button-box {
+                    margin-top: 240px;
+                }
+            }
+            .project-image {
+                position: static;
+                height: 100vh;
+            }
+        }
+
+    }//end of home
+
+    // Projects page
+    .project-page {
+       
+        h4 {
+            text-align: center;
+            padding: 15px;
+            border-bottom: 1px solid $black-color;
+            font-size: 20px;
+        }
+
+        .project-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            position: relative;
+        }
+    
+        .project-container {
+            padding: 40px;
+            border-bottom: 1px solid $black-color;
+        
+            a {
+                color: $black-color;
+            }
+    
+            .more-coming {
+                font-size: 30px;
+                color: $grey-color;
+            }
+    
+            .project {
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+    
+                .skills-container {
+                    margin-right: 40px;
+                    font-size: 15px;
+                    color: $grey-color;
+                }
+    
+                h3 {
+                    font-size: 33px;
+                    font-weight: 300;
+                }
+                
+            }     
+        }
+
+        .project-image{
+            display: block;
+            border-left: 1px solid $black-color;
+    
+            img {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    // Single Project
+    .single-project-page {
+
+        h2 {
+            font-size: 110px;
+        }
+
+    }
+
+    // Contact me
+    #contact-contents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid $black-color;
+
+        .contact-image {
+            border: none;
+            height: 600px; 
+            border-right: 1px solid $black-color;
+         }
+     
+         .contact-info {
+             padding: 15px 40px 0px;
+     
+             .section {
+                 height: 160px;
+     
+                 h4{
+                     font-size: 38px;
+                 }
+     
+                 p {
+                     font-size: 24px;
+                 }
+     
+                 span {
+                     font-size: 24px;
+                 }
+             }
+         }
+    }
+
+    // About
+    #about-image {
+        height: 800px;
+    }
+
+
+}//end of query
