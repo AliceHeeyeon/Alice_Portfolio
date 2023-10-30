@@ -201,6 +201,22 @@
         height: 600px;
     }
 
+    // Email form
+    .email-form-wrapper {
+
+        .email-me { 
+            max-width: 500px;
+
+            form {
+           
+                .form-section {
+                    margin: 50px 40px;
+                }
+            }
+        }
+
+        
+    }
 
 
 } // end of query

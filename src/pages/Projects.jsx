@@ -62,7 +62,7 @@ const Projects = () => {
         <div className='project-list'>
             {mappedProjects}
             <div className='project-container'>
-                <p className='more-coming'>More Projects Coming...</p>
+                <p className='more-coming'>More Projects Coming up</p>
             </div>
         </div>
         <div className='project-image'>

@@ -145,6 +145,7 @@ a {
 
         button {
             @include button-style;
+            color: $black-color;
         }
     }
 
@@ -370,7 +371,7 @@ footer {
         }
 
         .more-coming {
-            font-size: 30px;
+            font-size: 23px;
             color: $grey-color;
         }
 
@@ -427,7 +428,7 @@ footer {
 .single-page {
 
     h2 {
-        font-size: 50px;
+        font-size: 44px;
         font-weight: 300;
         padding: 80px 40px 20px;
         text-transform: uppercase;
@@ -456,7 +457,7 @@ footer {
         p {
             color: #4c4c4c;
             font-size: 20px;
-            line-height: 45px;
+            line-height: 40px;
             margin-top: 45px;
         }
     }
@@ -474,7 +475,7 @@ footer {
             li {
                 color: #4c4c4c;
                 font-size: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
         }
             
@@ -555,7 +556,7 @@ footer {
         position: fixed;
         top: 0;
         right:0;
-        max-width: 500px;
+        max-width: 375px;
         height: 100vh;
         background-color: $black-color;
         color: $beige-color;
@@ -595,7 +596,7 @@ footer {
             .form-section {
                 display: flex;
                 justify-content: center;
-                margin: 50px 40px;
+                margin: 35px 40px;
                 
                 .label {
                     width: 110px;
@@ -622,7 +623,7 @@ footer {
             }
             .email-submit {
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 margin-right: 40px;
             }
 

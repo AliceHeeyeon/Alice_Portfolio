@@ -145,6 +145,7 @@ a {
   transition: 1.5s ease;
   padding: 13px 30px;
   cursor: pointer;
+  color: #191919;
 }
 .nav-menu .nav-email button:hover {
   background-position: center;
@@ -424,7 +425,7 @@ footer .copyright {
   color: #191919;
 }
 .project-page .project-container .more-coming {
-  font-size: 30px;
+  font-size: 23px;
   color: #8D8D8D;
 }
 .project-page .project-container .project {
@@ -485,7 +486,7 @@ footer .copyright {
 }
 
 .single-page h2 {
-  font-size: 50px;
+  font-size: 44px;
   font-weight: 300;
   padding: 80px 40px 20px;
   text-transform: uppercase;
@@ -511,7 +512,7 @@ footer .copyright {
 .single-page .page-description p {
   color: #4c4c4c;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 40px;
   margin-top: 45px;
 }
 .single-page .page-feature {
@@ -526,7 +527,7 @@ footer .copyright {
 .single-page .page-feature ul li {
   color: #4c4c4c;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .single-page button {
   display: flex;
@@ -614,7 +615,7 @@ footer .copyright {
   position: fixed;
   top: 0;
   right: 0;
-  max-width: 500px;
+  max-width: 375px;
   height: 100vh;
   background-color: #191919;
   color: #F7F6F1;
@@ -648,7 +649,7 @@ footer .copyright {
 .email-form-wrapper .email-me form .form-section {
   display: flex;
   justify-content: center;
-  margin: 50px 40px;
+  margin: 35px 40px;
 }
 .email-form-wrapper .email-me form .form-section .label {
   width: 110px;
@@ -671,7 +672,7 @@ footer .copyright {
 }
 .email-form-wrapper .email-me form .email-submit {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 40px;
 }
 .email-form-wrapper .email-me form button {
@@ -859,6 +860,12 @@ footer .copyright {
   }
   #about-image {
     height: 600px;
+  }
+  .email-form-wrapper .email-me {
+    max-width: 500px;
+  }
+  .email-form-wrapper .email-me form .form-section {
+    margin: 50px 40px;
   }
 }
 @media screen and (min-width: 992px) {
