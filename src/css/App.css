@@ -888,8 +888,7 @@ footer .copyright {
     line-height: 160px;
     width: 80%;
   }
-  .home-page .hero button {
-    bottom: -10px;
+  .home-page .hero .hover-btn {
     right: 40px;
   }
   .home-page .overlay {
@@ -922,8 +921,8 @@ footer .copyright {
     padding: 13px 30px;
     color: #F7F6F1;
     cursor: pointer;
-    margin-top: 60px;
     margin-bottom: 100px;
+    right: 55px;
   }
   .home-page .overlay .hover-btn2:hover {
     background-position: center;
