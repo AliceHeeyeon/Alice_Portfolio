@@ -35,6 +35,7 @@
         }
 
         .overlay {
+            display: block;
             background-color: $black-color;
             color: $beige-color;
             position: absolute;

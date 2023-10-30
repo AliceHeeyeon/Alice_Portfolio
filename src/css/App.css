@@ -893,6 +893,7 @@ footer .copyright {
     right: 40px;
   }
   .home-page .overlay {
+    display: block;
     background-color: #191919;
     color: #F7F6F1;
     position: absolute;
