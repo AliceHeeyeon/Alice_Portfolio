@@ -10,6 +10,26 @@ a {
     transition: 1.5s ease;
 }
 
+// cursor
+.swipe-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 9999;
+    user-select:none;
+    pointer-events:none;
+
+    &.active {
+        background: $beige-color;
+        background-image: url('../../../../image/left-arrow.png');
+        background-size: cover;
+        opacity: 1;
+        width: 100px;
+        height: 100px;
+        
+    }
+}
 
 
 // nav bar
@@ -189,24 +209,24 @@ a {
             height: 400px;
             object-fit: cover;
         }
-
-        p {
-            font-size: 24px;
-            padding-inline: 40px;
-            line-height: 50px;
-            margin-top: 30px;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 60px;
-            margin-bottom: 80px;
-
-            button {
-                @include button-style;
+        .home-about-text {
+            margin: 40px 40px 60px;
+            p {
+                font-size: 24px;
+                line-height: 50px;
             }
 
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+               
+
+                button {
+                    @include button-style;
+                }
+
+            }
         }
     }
 
@@ -239,7 +259,7 @@ a {
                 border: 1px solid $black-color;
                 border-radius: 50px;
                 width: 200px;
-                margin-top: 20px;
+                margin-bottom: 60px;
 
                 button {
                     @include button-style;
@@ -255,7 +275,6 @@ a {
                     border-bottom-right-radius: 0px;
                     border-top-left-radius: 50px;
                     border-bottom-left-radius: 50px;
-                    color: $black-color;
                 }
 
                 #right {
@@ -267,7 +286,6 @@ a {
                     border-bottom-right-radius: 50px;
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;
-                    color: $black-color;
                 }
 
             }
@@ -424,7 +442,7 @@ footer {
     
 }
 
-// Single Project
+// Single Project, About me
 .single-page {
 
     h2 {

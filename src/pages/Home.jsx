@@ -112,6 +112,12 @@ const Home = () => {
 
       <div className='home-projects'>
         <div className='project-info'>
+          
+          <div className='button-box'>
+            <button onClick={handlePreviousProject} disabled={currentIndex === 0} id='left'><BsArrowLeft/></button>
+            <button onClick={handleNextProject} disabled={currentIndex === projectData.length - 1} id='right'><BsArrowRight/></button>
+          </div>
+
           <div className='info-box'>
             <p>PROJECT</p>
             <h5>{projectData[currentIndex].title}</h5>
@@ -125,10 +131,6 @@ const Home = () => {
             <h5>{projectData[currentIndex].date}</h5>
           </div>
 
-          <div className='button-box'>
-            <button onClick={handlePreviousProject} disabled={currentIndex === 0} id='left'><BsArrowLeft/></button>
-            <button onClick={handleNextProject} disabled={currentIndex === projectData.length - 1} id='right'><BsArrowRight/></button>
-          </div>
         </div>
         <a href={`#/projects/${currentIndex}`} onClick={handleBackToTop}>
           <div className='project-image'>

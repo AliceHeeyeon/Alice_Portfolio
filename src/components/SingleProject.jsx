@@ -1,8 +1,10 @@
+import { useEffect } from 'react';
 import { useParams } from 'react-router-dom'
 import projectData from '../../Projects.json'
 import {BsArrowRight} from 'react-icons/bs'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap/gsap-core';
 
 // Import Swiper style
 import "swiper/css";
@@ -13,9 +15,40 @@ const extractImages = (imgObj) => {
 
 const SingleProject = () => {
     const {id} = useParams()
-
     const currentImages =  extractImages(projectData[id].image)
     const featuresArray = projectData[id].features
+  
+    useEffect(() => {
+      const cursor = document.querySelector('.swipe-indicator');
+      const imageSection = document.querySelector('.page-images');
+
+      gsap.set(cursor, {xPercent: -50, yPercent: -50});
+
+      const handleMouseMove = (e) => {
+          gsap.to(cursor, 0.2, {x: e.clientX, y: e.clientY});
+      };
+
+      const handleMouseEnter = () => {
+          cursor.classList.add("active");
+      };
+
+      const handleMouseLeave = () => {
+          cursor.classList.remove("active");
+      };
+
+      window.addEventListener('mousemove', handleMouseMove);
+      imageSection.addEventListener("mouseenter", handleMouseEnter);
+      imageSection.addEventListener("mouseleave", handleMouseLeave);
+
+      // This function will run when the component is unmounted.
+      // It will remove the event listeners to avoid memory leaks.
+      return () => {
+          window.removeEventListener('mousemove', handleMouseMove);
+          imageSection.removeEventListener("mouseenter", handleMouseEnter);
+          imageSection.removeEventListener("mouseleave", handleMouseLeave);
+      };
+    }, []);
+
     
     const images = currentImages.map((image, index) => {
         return (
@@ -35,6 +68,7 @@ const SingleProject = () => {
              
   return (
     <div className='single-page page-container'>
+      <div className='swipe-indicator'></div>
       <h2>{projectData[id].title}</h2>
       <div className='page-images'>
         <Swiper className="mySwiper">

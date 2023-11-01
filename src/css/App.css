@@ -17,6 +17,26 @@ a {
   transition: 1.5s ease;
 }
 
+.swipe-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 9999;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.swipe-indicator.active {
+  background: #F7F6F1;
+  background-image: url("../../../../image/left-arrow.png");
+  background-size: cover;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+}
+
 .topnav {
   position: fixed;
   z-index: 1000;
@@ -209,19 +229,19 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.home-page .home-aboutme p {
-  font-size: 24px;
-  padding-inline: 40px;
-  line-height: 50px;
-  margin-top: 30px;
+.home-page .home-aboutme .home-about-text {
+  margin: 40px 40px 60px;
 }
-.home-page .home-aboutme .button-container {
+.home-page .home-aboutme .home-about-text p {
+  font-size: 24px;
+  line-height: 50px;
+}
+.home-page .home-aboutme .home-about-text .button-container {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-  margin-bottom: 80px;
 }
-.home-page .home-aboutme .button-container button {
+.home-page .home-aboutme .home-about-text .button-container button {
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -235,14 +255,14 @@ a {
   padding: 13px 30px;
   cursor: pointer;
 }
-.home-page .home-aboutme .button-container button:hover {
+.home-page .home-aboutme .home-about-text .button-container button:hover {
   background-position: center;
   color: #F7F6F1;
 }
-.home-page .home-aboutme .button-container button:hover a {
+.home-page .home-aboutme .home-about-text .button-container button:hover a {
   color: #F7F6F1;
 }
-.home-page .home-aboutme .button-container button svg {
+.home-page .home-aboutme .home-about-text .button-container button svg {
   margin-left: 30px;
 }
 .home-page .home-projects {
@@ -274,7 +294,7 @@ a {
   border: 1px solid #191919;
   border-radius: 50px;
   width: 200px;
-  margin-top: 20px;
+  margin-bottom: 60px;
 }
 .home-page .home-projects .project-info .button-box button {
   display: flex;
@@ -310,7 +330,6 @@ a {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  color: #191919;
 }
 .home-page .home-projects .project-info .button-box #right {
   flex: 1;
@@ -321,7 +340,6 @@ a {
   border-bottom-right-radius: 50px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  color: #191919;
 }
 .home-page .home-projects .project-image {
   position: absolute;
@@ -719,6 +737,7 @@ footer .copyright {
 
 @media screen and (min-width: 768px) {
   .home-page .hero {
+    position: relative;
     padding-inline: 40px;
     margin-top: 282px;
     padding-bottom: 80px;
@@ -730,22 +749,17 @@ footer .copyright {
   }
   .home-page .hero .hover-btn {
     position: absolute;
-    bottom: -68px;
-    right: 0px;
-  }
-  .home-page .overlay .hover-btn2 {
-    position: absolute;
-    bottom: 0px;
-    right: 16px;
+    bottom: 100px;
+    right: 40px;
+    margin: 0;
   }
   .home-page .home-aboutme img {
     width: 100%;
     height: 500px;
-    padding: 40px;
+    padding: 40px 40px 0px;
   }
-  .home-page .home-aboutme .button-container {
+  .home-page .home-aboutme .home-about-text .button-container {
     justify-content: flex-end;
-    margin-right: 40px;
   }
   .background-filter {
     position: absolute;
@@ -881,15 +895,15 @@ footer .copyright {
   }
   .home-page .hero {
     margin: 0;
-    padding: 260px 40px 60px;
+    padding: 260px 100px 60px;
   }
   .home-page .hero h1 {
     font-size: 110px;
     line-height: 160px;
-    width: 80%;
+    max-width: 1300px;
   }
   .home-page .hero .hover-btn {
-    right: 40px;
+    right: 100px;
   }
   .home-page .overlay {
     display: block;
@@ -921,8 +935,10 @@ footer .copyright {
     padding: 13px 30px;
     color: #F7F6F1;
     cursor: pointer;
+    position: absolute;
     margin-bottom: 100px;
-    right: 55px;
+    right: 100px;
+    bottom: 0;
   }
   .home-page .overlay .hover-btn2:hover {
     background-position: center;
@@ -943,37 +959,45 @@ footer .copyright {
   .home-page .home-aboutme img {
     width: 50vw;
     height: 550px;
+    padding: 80px 100px;
   }
   .home-page .home-aboutme .home-about-text {
     position: relative;
+    margin: 80px 100px 80px 0px;
+    width: 100%;
   }
   .home-page .home-aboutme .home-about-text p {
     font-size: 29px;
-    line-height: 60px;
+    line-height: 65px;
+    max-width: 700px;
   }
   .home-page .home-aboutme .home-about-text .button-container {
     position: absolute;
-    right: 40px;
-    bottom: 40px;
+    right: 0;
+    bottom: 0;
     margin: 0;
   }
   .home-page .home-projects {
-    grid-template-columns: 300px 1fr;
-    height: 100vh;
+    grid-template-columns: 400px 1fr;
+    height: 90vh;
   }
   .home-page .home-projects .project-info {
     border-right: 1px solid #191919;
-    padding: 60px 40px 70px;
-    justify-content: start;
+    padding: 60px 100px 70px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 120px 180px 180px 180px;
   }
   .home-page .home-projects .project-info .info-box {
-    text-align: start;
+    text-align: center;
   }
   .home-page .home-projects .project-info .info-box h5 {
     font-size: 27px;
+    margin-bottom: 0px;
   }
   .home-page .home-projects .project-info .button-box {
-    margin-top: 240px;
+    height: 51px;
+    margin-bottom: 50px;
   }
   .home-page .home-projects .project-image {
     position: static;
@@ -1085,7 +1109,25 @@ footer .copyright {
   #contact-contents .contact-info .section span {
     font-size: 24px;
   }
+  .single-page h2 {
+    padding: 100px 100px 20px;
+  }
+  .single-page .page-description {
+    padding: 50px 240px 50px 100px;
+  }
+  .single-page .page-feature {
+    padding: 50px 240px 60px 100px;
+  }
+  .single-page .tryapp {
+    display: flex;
+    justify-content: center;
+    padding-left: 240px;
+  }
+  .single-page .tryapp button {
+    margin: 0px 150px 60px 0px;
+  }
   #about-image {
-    height: 800px;
+    padding: 100px;
+    height: 900px;
   }
 }/*# sourceMappingURL=App.css.map */

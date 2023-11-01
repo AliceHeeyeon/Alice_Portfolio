@@ -20,19 +20,20 @@
     .home-page {
         .hero {
             margin: 0;
-            padding: 260px 40px 60px;
+            padding: 260px 100px 60px;
 
             h1 {
                 font-size: 110px;
                 line-height: 160px;
-                width: 80%;
+                max-width: 1300px;
             }
 
             .hover-btn {
-                right: 40px;
+                right: 100px;
             }
-        }
 
+        }
+      
         .overlay {
             display: block;
             background-color: $black-color;
@@ -46,8 +47,10 @@
     
             .hover-btn2 {
                 @include button-light-style;
+                position: absolute;
                 margin-bottom: 100px;
-                right: 55px;
+                right: 100px;
+                bottom: 0;
             }
             a {
                 color: beige;
@@ -60,43 +63,51 @@
             img {
                 width: 50vw;
                 height: 550px;
+                padding: 80px 100px;
             }
 
             .home-about-text {
                 position: relative;
+                margin: 80px 100px 80px 0px;
+                width: 100%;
 
                 p {
                     font-size: 29px;
-                    line-height: 60px;
+                    line-height: 65px;
+                    max-width: 700px;
                 }
 
                 .button-container {
                     position: absolute;
-                    right: 40px;
-                    bottom: 40px;
+                    right: 0;
+                    bottom: 0;
                     margin: 0;
                 }
             }    
         }
 
         .home-projects {
-            grid-template-columns: 300px 1fr;
-            height: 100vh;
+            grid-template-columns: 400px 1fr;
+            height: 90vh;
             .project-info {
                 border-right: 1px solid $black-color;
-                padding: 60px 40px 70px;
-                justify-content: start;
+                padding: 60px 100px 70px;
+                justify-content: center;
+                display: grid;
+                grid-template-rows: 120px 180px 180px 180px;
     
                 .info-box {
-                    text-align: start;
-                  
+                    text-align: center;
+            
                     h5 {
                         font-size: 27px;
+                        margin-bottom: 0px;
                     }
                 }
     
                 .button-box {
-                    margin-top: 240px;
+                    height: 51px;
+                    margin-bottom: 50px;
                 }
             }
             .project-image {
@@ -225,9 +236,37 @@
          }
     }
 
+    // Single Project, about me
+    .single-page {
+
+        h2 {
+            padding: 100px 100px 20px;
+        }
+
+        .page-description {
+            padding: 50px 240px 50px 100px;
+        }
+
+        .page-feature {
+            padding: 50px 240px 60px 100px;
+        }
+
+        .tryapp {
+            display: flex;
+            justify-content: center;
+            padding-left: 240px;
+
+            button {
+                margin: 0px 150px 60px 0px;
+            }
+        }
+
+    }
+
     // About
     #about-image {
-        height: 800px;
+        padding: 100px;
+        height: 900px;
     }
 
 
