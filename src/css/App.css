@@ -514,6 +514,9 @@ footer .copyright {
   font-size: 24px;
   font-weight: 400;
 }
+.single-page .project-mockup-slides {
+  cursor: none;
+}
 .single-page .page-images {
   height: 400px;
   border-top: 1px solid #191919;

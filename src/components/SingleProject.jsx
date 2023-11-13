@@ -70,7 +70,7 @@ const SingleProject = () => {
     <div className='single-page page-container'>
       <div className='swipe-indicator'></div>
       <h2>{projectData[id].title}</h2>
-      <div className='page-images'>
+      <div className='page-images project-mockup-slides'>
         <Swiper className="mySwiper">
             {images}
         </Swiper>
