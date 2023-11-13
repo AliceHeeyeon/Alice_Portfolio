@@ -799,16 +799,51 @@ footer .copyright {
     margin: 0;
   }
   .home-page .overlay {
+    background-color: #191919;
+    color: #F7F6F1;
+    position: absolute;
+    top: 70px;
+    left: 0;
     -webkit-clip-path: circle(120px at 50% 50%);
             clip-path: circle(120px at 50% 50%);
     -webkit-clip-path: circle(120px at var(--x, 50%) var(--y, 50%));
             clip-path: circle(120px at var(--x, 50%) var(--y, 50%));
+    transition: -webkit-clip-path 100ms;
+    transition: clip-path 100ms;
+    transition: clip-path 100ms, -webkit-clip-path 100ms;
   }
   .home-page .overlay .hover-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #F7F6F1;
+    background-image: url(../../../image/button-bg-fill-light.png);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+    padding: 13px 30px;
+    color: #F7F6F1;
+    cursor: pointer;
     position: absolute;
     bottom: 100px;
     right: 40px;
     margin: 0;
+  }
+  .home-page .overlay .hover-btn2:hover {
+    background-position: center;
+    color: #191919;
+  }
+  .home-page .overlay .hover-btn2:hover a {
+    color: #191919;
+  }
+  .home-page .overlay .hover-btn2 svg {
+    margin-left: 30px;
+  }
+  .home-page .overlay a {
+    color: beige;
   }
   .home-page .home-aboutme img {
     width: 100%;
