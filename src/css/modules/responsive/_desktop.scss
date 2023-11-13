@@ -19,7 +19,6 @@
     //home
     .home-page {
         .hero {
-            margin: 0;
             padding: 260px 100px 60px;
 
             h1 {
@@ -35,26 +34,16 @@
         }
       
         .overlay {
-            display: block;
             background-color: $black-color;
             color: $beige-color;
             position: absolute;
-            top: 70px;
-            left: 0;
-            clip-path: circle(120px at 50% 50%);
-            clip-path: circle(120px at var(--x, 50%) var(--y, 50%));
-            transition: clip-path 100ms;
     
             .hover-btn2 {
-                @include button-light-style;
-                position: absolute;
                 margin-bottom: 100px;
                 right: 100px;
                 bottom: 0;
             }
-            a {
-                color: beige;
-            }
+    
         }
 
         .home-aboutme {
