@@ -45,4 +45,19 @@
         "sub-image-3": "../../image/aurea4.png"
     },
     "url":"https://github.com/AliceHeeyeon/Formative3.2_Alice_Ryan_Maria_Yasser"
+},
+{
+    "id": 3,
+    "title" : "Kiwi Art House",
+    "type" : "individual",
+    "date" : "NOV 2023",
+    "skills" : ["react", "CMS"],
+    "description" : "I redesigned the Kiwi Art House Gallery website with WordPress and React. I implemented customisable features that allow for the adjustment of the background colour of the header and buttons. This flexibility enables simple changes to the website's colour palette.",
+    "features" : ["Custom Posts", "Custom data field", "WooCommerce Product listing", "Customized Contact Form", "Image Optimisation(Smush)", "Search Engine Optimisation(SEO)", "Customisable Font and Colour"],
+    "image" : {
+        "main-image": "../../image/kiwiarthouse1.png",
+        "sub-image-1": "../../image/kiwiarthouse2.png",
+        "sub-image-2": "../../image/kiwiarthouse3.png"
+    },
+    "url":"https://kiwi-art-house.vercel.app/#/"
 }]
