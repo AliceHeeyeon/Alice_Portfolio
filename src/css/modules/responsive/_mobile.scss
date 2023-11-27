@@ -10,6 +10,17 @@ a {
     transition: 1.5s ease;
 }
 
+@media screen and (max-width: 415px) {
+
+    .home-page {
+
+        .overlay {
+            display: none;
+        }
+    }
+
+}
+
 // cursor
 .swipe-indicator {
     position: fixed;
@@ -239,8 +250,8 @@ a {
                 display: flex;
                 justify-content: center;
                 margin-top: 60px;
+                width: max-content;
                
-
                 button {
                     @include button-style;
                 }
@@ -294,6 +305,7 @@ a {
                     border-bottom-right-radius: 0px;
                     border-top-left-radius: 50px;
                     border-bottom-left-radius: 50px;
+                    color: gray;
                 }
 
                 #right {
@@ -305,6 +317,7 @@ a {
                     border-bottom-right-radius: 50px;
                     border-top-left-radius: 0px;
                     border-bottom-left-radius: 0px;
+                    color: gray;
                 }
 
             }
@@ -434,7 +447,7 @@ footer {
             }
 
             h3 {
-                font-size: 26px;
+                font-size: 23px;
                 font-weight: 300;
                 transition: all 0.9s ease;     
             }
@@ -465,10 +478,11 @@ footer {
 .single-page {
 
     h2 {
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 300;
         padding: 80px 40px 20px;
         text-transform: uppercase;
+        width:max-content;
     }
 
     h4 {

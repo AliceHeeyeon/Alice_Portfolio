@@ -17,6 +17,11 @@ a {
   transition: 1.5s ease;
 }
 
+@media screen and (max-width: 415px) {
+  .home-page .overlay {
+    display: none;
+  }
+}
 .swipe-indicator {
   position: fixed;
   top: 0;
@@ -283,6 +288,8 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .home-page .home-aboutme .home-about-text .button-container button {
   display: flex;
@@ -373,6 +380,7 @@ a {
   border-bottom-right-radius: 0px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  color: gray;
 }
 .home-page .home-projects .project-info .button-box #right {
   flex: 1;
@@ -383,6 +391,7 @@ a {
   border-bottom-right-radius: 50px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  color: gray;
 }
 .home-page .home-projects .project-image {
   position: absolute;
@@ -528,7 +537,7 @@ footer .copyright {
   width: 95px;
 }
 .project-page .project-container .project h3 {
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 300;
   transition: all 0.9s ease;
 }
@@ -547,10 +556,12 @@ footer .copyright {
 }
 
 .single-page h2 {
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 300;
   padding: 80px 40px 20px;
   text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
 }
 .single-page h4 {
   font-size: 24px;

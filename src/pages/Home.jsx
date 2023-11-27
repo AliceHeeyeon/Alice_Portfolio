@@ -104,7 +104,7 @@ const Home = () => {
           </p>
           <div className='button-container'>
             <button>
-              <Link to='/aboutme' onClick={handleBackToTop}>GET TO KNOW ABOUT ME<BsArrowRight/></Link>
+              <Link to='/aboutme' onClick={handleBackToTop}>KNOW MORE ABOUT ME<BsArrowRight/></Link>
             </button>
           </div>
         </div>
