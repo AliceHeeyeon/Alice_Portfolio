@@ -10,6 +10,7 @@ a {
     transition: 1.5s ease;
 }
 
+// hide overlay for mobile device
 @media screen and (max-width: 415px) {
 
     .home-page {
