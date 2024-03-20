@@ -587,7 +587,7 @@ footer .copyright {
 .single-page .page-description p {
   color: #4c4c4c;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 35px;
   margin-top: 45px;
 }
 .single-page .page-feature {
@@ -955,7 +955,7 @@ footer .copyright {
   }
   .single-page .page-description p {
     font-size: 25px;
-    line-height: 60px;
+    line-height: 45px;
     margin-top: 0px;
   }
   .single-page .page-feature {
@@ -964,7 +964,7 @@ footer .copyright {
   }
   .single-page .page-feature ul li {
     font-size: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .single-page .tryapp {
     display: grid;

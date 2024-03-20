@@ -51,13 +51,13 @@
     "title" : "Kiwi Art House",
     "type" : "individual",
     "date" : "NOV 2023",
-    "skills" : ["react", "CMS"],
-    "description" : "I redesigned the Kiwi Art House Gallery website with WordPress and React. I implemented customisable features that allow for the adjustment of the background colour of the header and buttons. This flexibility enables simple changes to the website's colour palette.",
+    "skills" : ["react", "WordPress", "AWS Lightsail"],
+    "description" : "I redesigned the Kiwi Art House Gallery website with WordPress and React. It successfully integrates with multiple plugins such as Advanced Custom Fields (ACF), Custom Post Type UI and Contact Form, allowing for easy addition, editing, and deletion of data whenever a client needs it.",
     "features" : ["Custom Posts", "Custom data field", "WooCommerce Product listing", "Customized Contact Form", "Image Optimisation(Smush)", "Search Engine Optimisation(SEO)", "Customisable Font and Colour"],
     "image" : {
         "main-image": "../../image/kiwiarthouse1.png",
         "sub-image-1": "../../image/kiwiarthouse2.png",
         "sub-image-2": "../../image/kiwiarthouse3.png"
     },
-    "url":"https://github.com/AliceHeeyeon/Kiwi_Art_House"
+    "url":"https://redesign-kiwi-art-house.vercel.app"
 }]

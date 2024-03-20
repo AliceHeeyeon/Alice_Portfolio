@@ -89,7 +89,7 @@ const Home = () => {
       <div ref={overlayRef} className='hero overlay'>
         <h1>
         안녕하세요 저는
-        <span>코딩과 디자인 모두 열정있는 개발자 김희연입니다</span>
+        <span>디자이너의 눈을 가진 개발자 김희연입니다.</span>
         <button className='hover-btn2'>
           <Link to='/projects'>SEE PROJECTS<BsArrowRight/></Link>
         </button>
