@@ -3,23 +3,31 @@
     "title" : "staysavvy",
     "type" : "individual",
     "date" : "JUN 2023",
-    "skills" : ["javascript", "UX design"],
-    "description" : "This app is designed to allow users to search for accommodations, calculate the distance between their starting point and destination, and provide an estimate of expenses including transportation costs. This enables users to book accommodations within their budget.",
+    "skills" : ["javascript", "JS libraries"],
+    "tools" : ["JavaScript", "CSS", "HTML", "JS libraries(Map box, Date picker, Swiper)"],
+    "description" : "An accommodation booking application that provides estimated travel budgets.",
     "features" : ["Searching by keywords", "Displaying results using Mapbox", "Calculating fuel costs", "Dark mode toggle"],
     "image" : {
         "main-image": "../../image/staysavvy1.png",
         "sub-image-1": "../../image/staysavvy2.png",
         "sub-image-2": "../../image/staysavvy3.png"
     },
-    "url" : "https://staysavvy.vercel.app/"
+    "challenges" : "This project was my first JavaScript application, so I was not familiar with how to effectively manage multiple pages.",
+    "troubleshooting": "Instead of creating multiple HTML files, I utilized the Swiper library to create multiple slides that can be switched by interacting with users.",
+    "outcome": "The features, including displaying the searched accommodation on the map and sorting by price or rating, work well. A dark mode toggle was also applied for better UX. I grasped fundamental JavaScript rules while working on this project.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/STAYSAVVY",
+        "project" : "https://staysavvy.vercel.app/"
+    }
 },
 {
     "id": 1,
     "title" : "WUX Project",
     "type" : "Team",
     "date" : "AUG 2023",
-    "skills" : ["react", "full-stack"],
-    "description" : "This platform serves as a hub for students to showcase their complete projects while also providing a convenient space to explore the works of their peers.",
+    "skills" : ["react", "MERN stack"],
+    "tools" : ["JavaScript", "React", "Node.js", "Express.js", "MongoDB", "Postman", "SASS"],
+    "description" : "A platform for students to share completed projects, enabling users to view each other's work.",
     "features" : ["Sign up and Log In", "Project Upload", "Project Edit and Delete", "Warning message for Deletion", "Displaying chosen user’s projects"],
     "image" : {
         "main-image": "../../image/wux1.png",
@@ -28,7 +36,12 @@
         "sub-image-3": "../../image/wux4.png",
         "sub-image-4": "../../image/wux5.png"
     },
-    "url":"https://github.com/AliceHeeyeon/Summative-Alice_Annika_Deepak_Ethan_Yasser"
+    "challenges" : "We encountered image display issues despite successful text data rendering.",
+    "troubleshooting": "Investigation using Chrome Developer Tools revealed network errors for all images due to a missing route attachment for images stored in the public folder.",
+    "outcome": "User authentication is now implemented for content creation, editing, and deletion. This experience taught me effective use of developer tools, particularly in diagnosing server data fetching issues.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/WUX-Project"
+    }
 },
 {
     "id": 2,
@@ -36,7 +49,8 @@
     "type" : "Team",
     "date" : "SEP 2023",
     "skills" : ["react", "full-stack"],
-    "description" : "This is a third party jewelry market place platform to assist individual designers who were facing challenges in creating their own platforms.",
+    "tools" : ["JavaScript", "React", "Node.js", "Express.js", "MongoDB", "Postman", "SASS"],
+    "description" : "An online marketplace, where people come together to sell, buy and collect unique jewelry.",
     "features" : ["Sign up and Log In", "Product Upload", "Wish list Management", "Shopping Cart functionality", "Product Comments", "Vendor Comment Management"],
     "image" : {
         "main-image": "../../image/aurea1.png",
@@ -44,20 +58,123 @@
         "sub-image-2": "../../image/aurea3.png",
         "sub-image-3": "../../image/aurea4.png"
     },
-    "url":"https://github.com/AliceHeeyeon/Formative3.2_Alice_Ryan_Maria_Yasser"
+    "challenges" : "Two of members were unable to participate due to personal and health issues.",
+    "troubleshooting": "I suggested adjusting our timeline to meet the deadline and encouraged the team to complete daily tasks as much as possible.",
+    "outcome": "Despite the added pressure, each member supported one another once their tasks were completed. We successfully enabled users to create accounts by type (Seller, Customer), and the account page displayed differently according to user information.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/Aurea"
+    }
+    
 },
 {
     "id": 3,
+    "title" : "Portfolio Website",
+    "type" : "individual",
+    "date" : "NOV 2024",
+    "skills" : ["React", "GSAP"],
+    "tools" : ["React", "GSAP", "SASS"],
+    "description" : "My personal portfolio website to showcase my works.",
+    "features" : ["Cursor tracking"],
+    "image" : {
+        "main-image": "../../image/portfolio1.png",
+        "sub-image-1": "../../image/portfolio2.png",
+        "sub-image-2": "../../image/portfolio3.png"
+    },
+    "challenges" : "When writing, Korean is much shorter, so the occupied space between two layers was not the same.",
+    "troubleshooting": "I wrote the sentence in Korean with a slightly different meaning than in English.",
+    "outcome": "The GSAP cursor tracking effect with clip path effectively conveys my identity and visually makes the landing page interesting.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/Alice_Portfolio",
+        "project" : "https://www.alicekim.co.nz/"
+    }
+},
+{
+    "id": 4,
     "title" : "Kiwi Art House",
     "type" : "individual",
     "date" : "NOV 2023",
-    "skills" : ["react", "WordPress", "AWS Lightsail"],
-    "description" : "I redesigned the Kiwi Art House Gallery website with WordPress and React. It successfully integrates with multiple plugins such as Advanced Custom Fields (ACF), Custom Post Type UI and Contact Form, allowing for easy addition, editing, and deletion of data whenever a client needs it.",
-    "features" : ["Custom Posts", "Custom data field", "WooCommerce Product listing", "Customized Contact Form", "Image Optimisation(Smush)", "Search Engine Optimisation(SEO)", "Customisable Font and Colour"],
+    "skills" : ["react", "WordPress"],
+    "tools" : ["JavaScript", "PHP", "React", "WordPress", "CSS", "SASS"],
+    "description" : "Redesigning the 'Kiwi Art House Gallery' website and developing it using CMS and React.",
+    "features" : ["Custom WordPress Theme", "Easy contents management", "Customisable data field"],
     "image" : {
         "main-image": "../../image/kiwiarthouse1.png",
         "sub-image-1": "../../image/kiwiarthouse2.png",
         "sub-image-2": "../../image/kiwiarthouse3.png"
     },
-    "url":"https://redesign-kiwi-art-house.vercel.app"
+    "challenges" : "I used AWS Lightsail to deploy WordPress content, but I couldn't access the deployed endpoint because the domain from AWS used 'http'",
+    "troubleshooting": "I searched the AWS Documentation and found a solution for configuring HTTP to HTTPS redirection using Route53.",
+    "outcome": "The website now boasts a modern aesthetic suitable for an art gallery. The contents are easily managed via a separate AWS domain.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/Kiwi_Art_House",
+        "project" : "https://redesign-kiwi-art-house.vercel.app/"
+    }
+},
+{
+    "id": 5,
+    "title" : "Smart Power",
+    "type" : "individual",
+    "date" : "APR 2024",
+    "skills" : ["Material UI", "Tailwind"],
+    "tools" : ["React", "JavaScript", "Material UI", "Tailwind CSS"],
+    "description" : "Energy usage application for energy provider. It visualize data usage for daily, monthly and assigned time range.",
+    "features" : ["Custom WordPress Theme", "Easy contents management", "Customisable data field"],
+    "image" : {
+        "main-image": "../../image/smartpower1.png",
+        "sub-image-1": "../../image/smartpower2.png",
+        "sub-image-2": "../../image/smartpower3.png"
+    },
+    "challenges" : "The monthly usage values are displayed inconsistently between the 'monthly' component and the 'date range' component.",
+    "troubleshooting": "I created a custom hook using useReducer to facilitate sharing the same values across components.",
+    "outcome": "It is easier to manage code by handling rounded usage in a separate hook component, ensuring consistent results.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/smart-power",
+        "project" : "https://smart-power.vercel.app/"
+    }
+},
+{
+    "id": 6,
+    "title" : "Translang",
+    "type" : "individual",
+    "date" : "APR 2024",
+    "skills" : ["TypeScript", "Next.js"],
+    "tools" : ["TypeScript", "Next.js", "Web Speech API", "OpenAI API"],
+    "description" : "A translation application that recognizes the user's voice and translates it into assigned languages.",
+    "features" : ["Language translation", "Voice Recognition", "Translate speech into the native language."],
+    "image" : {
+        "main-image": "../../image/translang1.png",
+        "sub-image-1": "../../image/translang2.png",
+        "sub-image-2": "../../image/translang3.png"
+    },
+    "challenges" : "Being new to Next.js, I initially found the file structure and routing system challenging.",
+    "troubleshooting": "I read the documentation on the official Next.js website and found a blog that explained it with example code.",
+    "outcome": "Although the project was a single-page application, it significantly expanded my knowledge of TypeScript and introduced me to the practical advantages of using Next.js.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/translang",
+        "project" : "https://translang-two.vercel.app/"
+    }
+},
+{
+    "id": 7,
+    "title" : "31Thoughts",
+    "type" : "individual",
+    "date" : "MAY 2024",
+    "skills" : ["Node.js", "Express.js"],
+    "tools" : ["Node.js", "Express.js", "MongoDB", "Postman", "React.js"],
+    "description" : "An advice-sharing platform where everyone can create a post and add comments.",
+    "features" : ["Create a post", "Add comments", "Increment 'likes'", "Update in real time"],
+    "image" : {
+        "main-image": "../../image/31thoughts1.png",
+        "sub-image-1": "../../image/31thoughts2.png",
+        "sub-image-2": "../../image/31thoughts3.png",
+        "sub-image-3": "../../image/31thoughts4.png"
+
+    },
+    "challenges" : "Initially, the real-time update features for the 'like' button and the post-sorting by selected options were malfunctioning due to issues with asynchronous function rendering.",
+    "troubleshooting": " I revised the 'handle-like' function to prioritize checking the sorting option before updating and sorting based on that option. This ensures posts are updated with each 'like', and useEffect is triggered whenever the posts are updated.",
+    "outcome": "The modifications have enhanced user engagement by ensuring real-time updates. The platform is now actively used by real users.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/31thoughts",
+        "project" : "https://www.31thoughts.com/"
+    }
 }]
