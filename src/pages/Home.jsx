@@ -89,7 +89,7 @@ const Home = () => {
       <div ref={overlayRef} className='hero overlay'>
         <h1>
         안녕하세요 저는
-        <span>디자이너의 눈을 가진 개발자 김희연입니다.</span>
+        <span>사용자의 경험에 재미를 더하는 서비스를 지향하는  개발자입니다.</span>
         <button className='hover-btn2'>
           <Link to='/projects'>SEE PROJECTS<BsArrowRight/></Link>
         </button>
@@ -97,18 +97,65 @@ const Home = () => {
       </div>
 
       <div className='home-aboutme'>
-        <img src='../image/home-alice.jpg' alt='home-alice'/>
+        <div className='home-section'>ABOUT ME</div>
         <div className='home-about-text'>
           <p>
-            I have a particular interest in back-end development.<br/> I enjoy solving complex problems and am always eager to exceed expectations.
+          Since 2023, I have been immersed in web development, finding a particular passion for programming upon learning JavaScript. I enjoy both creating engaging frontend pages and delving into backend architecture, and I continuously seek opportunities to enhance my skills.
           </p>
           <div className='button-container'>
             <button>
-              <Link to='/aboutme' onClick={handleBackToTop}>KNOW MORE ABOUT ME<BsArrowRight/></Link>
+              <Link to='/aboutme' onClick={handleBackToTop}>MORE ABOUT ME<BsArrowRight/></Link>
             </button>
           </div>
         </div>
       </div>
+      
+      <div className='home-section'>Skills & Project Demo</div>
+      <div className='home-skills'>
+          <div className='skills-list'>
+            <ul>
+              <li>
+                <p>JavaScript, React</p>
+                <div className='project-link'>
+                  <a href='https://www.31thoughts.com' target='_blank' rel='noopener noreferrer'>31thoughts,</a>
+                  <a href='https://staysavvy.vercel.app/' target='_blank' rel='noopener noreferrer'>Staysavvy</a>
+                </div>
+              </li>
+              <li>
+                <p>TypeScript, Next.js</p>
+                <div className='project-link'>
+                  <a href='https://translang-two.vercel.app/' target='_blank' rel='noopener noreferrer'>Translang</a>
+                </div>
+              </li>
+              <li>
+                <p>Node.js, Express</p>
+                <div className='project-link'>
+                  <a href='https://github.com/AliceHeeyeon/WUX-Project' target='_blank' rel='noopener noreferrer'>
+                  WUX Project</a>
+                </div>
+              </li>
+              <li>
+                <p>WordPress</p>
+                <div className='project-link'>
+                  <a href='https://redesign-kiwi-art-house.vercel.app/' target='_blank' rel='noopener noreferrer'>Kiwi Art House</a>
+                </div>
+              </li>
+              <li>
+                <p>Tailwind, MUI, GSAP</p>
+                <div className='project-link'>
+                  <a href='https://smart-power.vercel.app/' target='_blank' rel='noopener noreferrer'>Smart Power,</a>
+                  <a href='https://alicekim.co.nz' target='_blank' rel='noopener noreferrer'>Portfolio Website</a>
+                </div>
+              </li>
+              <li>
+                <p>AWS Cloud</p>
+                <div className='project-link'>
+                  <a href='https://www.canva.com/design/DAF7alBjafA/lFAWMqKyHsqz05Xz0ZuRAg/view?utm_content=DAF7alBjafA&utm_campaign=designshare&utm_medium=link&utm_source=editor' target='_blank' rel='noopener noreferrer'>Jedi Mission Log</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
       <div className='home-projects'>
         <div className='project-info'>
