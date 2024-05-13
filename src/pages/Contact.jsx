@@ -16,17 +16,25 @@ const Contact = () => {
         <div className='contact-image'>
             <img src='../image/contact-alice.jpg' alt='contact-alice'/>
         </div>
-        <div className='contact-info'>
-            <div className='contact-title section'>
+        <div id='contact-page' className='contact-info page-section'>
+            <div className='contact-title'>
                 <h4>CONTACT INFO</h4>
             </div>
             <div className='contact-email section'>
                 <p>EMAIL</p>
                 <span>lovelyalice.kim@gmail.com</span>
             </div>
-            <div className='contact-phone section'>
-                <p>PHONE</p>
-                <span>+64 27-581-7259</span>
+            <div className='contact-linkedin section'>
+                <p>LINKEDIN</p>
+                <span>linkedin.com/in/alice-heeyeon-kim/</span>
+            </div>
+            <div className='contact-instagram section'>
+                <p>INSTAGRAM</p>
+                <span>@hinneeee</span>
+            </div>
+            <div className='contact-github section'>
+                <p>GITHUB</p>
+                <span>github.com/AliceHeeyeon</span>
             </div>
         </div>
       </div>

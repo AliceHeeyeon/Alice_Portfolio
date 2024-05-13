@@ -238,10 +238,9 @@
          }
      
          .contact-info {
-             padding: 15px 40px 0px;
+             padding: 15px 40px 40px;
      
              .section {
-                 height: 160px;
      
                  h4{
                      font-size: 38px;
@@ -252,7 +251,7 @@
                  }
      
                  span {
-                     font-size: 24px;
+                     font-size: 21px;
                  }
              }
          }
@@ -287,12 +286,13 @@
 
         h2 {
             font-size: 90px;
-            padding: 100px 40px 20px;
+            padding: 120px 40px 30px;
+            line-height: 120px;
         }
 
        .page-section {
             padding: 40px 80px;
-            grid-template-columns: 0.5fr 1fr;
+            grid-template-columns: 0.4fr 1fr;
 
             .project-detail {
                 font-size: 21px;
@@ -309,6 +309,17 @@
        }
 
        
+    }
+
+    //contact info
+    #contact-page {
+        grid-template-columns: none;
+
+        .contact-title {
+            h4 {
+                font-size: 31px;
+            }
+        }
     }
 
     // About

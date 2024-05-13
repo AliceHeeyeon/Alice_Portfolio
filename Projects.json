@@ -70,7 +70,7 @@
     "id": 3,
     "title" : "Portfolio",
     "type" : "individual",
-    "date" : "NOV 2024",
+    "date" : "NOV 2023",
     "skills" : ["React", "GSAP"],
     "tools" : ["React", "GSAP", "SASS"],
     "description" : "My personal portfolio website to showcase my works.",

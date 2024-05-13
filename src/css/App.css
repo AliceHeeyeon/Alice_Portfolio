@@ -595,11 +595,10 @@ footer .copyright {
 .single-page .page-title-container {
   display: flex;
   align-items: end;
-  width: 100%;
+  justify-content: space-between;
 }
 .single-page .page-title-container .links {
   display: flex;
-  width: 100%;
   justify-content: end;
   margin-bottom: 30px;
   margin-right: 40px;
@@ -623,7 +622,8 @@ footer .copyright {
 .single-page h2 {
   font-size: 40px;
   font-weight: 300;
-  padding: 80px 10px 20px 40px;
+  line-height: 42px;
+  padding: 80px 10px 26px 40px;
   text-transform: uppercase;
   width: -moz-max-content;
   width: max-content;
@@ -649,6 +649,20 @@ footer .copyright {
   font-size: 16px;
   line-height: 28px;
   color: rgb(109, 108, 108);
+}
+.single-page .page-section .project-detail .degree {
+  color: #242424;
+  font-weight: 500;
+}
+.single-page .page-section .mystory {
+  margin-bottom: 20px;
+}
+.single-page .page-section .education-section {
+  margin-bottom: 20px;
+}
+.single-page .page-section .cert-title {
+  color: #242424;
+  font-weight: 500;
 }
 .single-page .page-section h4 {
   font-size: 24px;
@@ -701,26 +715,21 @@ footer .copyright {
 }
 
 .contact-info {
-  padding: 15px 40px;
+  padding-top: 35px !important;
 }
 .contact-info .section {
-  height: 130px;
-  border-bottom: 1px solid #191919;
-  padding-top: 15px;
+  margin-top: 30px;
 }
 .contact-info .section h4 {
   margin-top: 10px;
 }
 .contact-info .section p {
-  font-size: 20px;
+  font-size: 18px;
   color: #8D8D8D;
   margin-bottom: 6px;
 }
 .contact-info .section span {
-  font-size: 20px;
-}
-.contact-info .contact-phone {
-  border: none;
+  font-size: 16px;
 }
 
 #about-image {
@@ -1005,9 +1014,8 @@ footer .copyright {
   }
   .single-page .page-section {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
     border-bottom: 1px solid #191919;
-    padding: 30px 40px;
+    padding: 30px 40px 50px;
   }
   #about-image {
     height: 600px;
@@ -1224,10 +1232,7 @@ footer .copyright {
     border-right: 1px solid #191919;
   }
   #contact-contents .contact-info {
-    padding: 15px 40px 0px;
-  }
-  #contact-contents .contact-info .section {
-    height: 160px;
+    padding: 15px 40px 40px;
   }
   #contact-contents .contact-info .section h4 {
     font-size: 38px;
@@ -1236,7 +1241,7 @@ footer .copyright {
     font-size: 24px;
   }
   #contact-contents .contact-info .section span {
-    font-size: 24px;
+    font-size: 21px;
   }
   .single-page .page-title-container .links {
     margin-bottom: 50px;
@@ -1259,11 +1264,12 @@ footer .copyright {
   }
   .single-page h2 {
     font-size: 90px;
-    padding: 100px 40px 20px;
+    padding: 120px 40px 30px;
+    line-height: 120px;
   }
   .single-page .page-section {
     padding: 40px 80px;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
   }
   .single-page .page-section .project-detail {
     font-size: 21px;
@@ -1274,6 +1280,12 @@ footer .copyright {
   }
   .single-page .page-section ul li {
     margin-bottom: 6px;
+  }
+  #contact-page {
+    grid-template-columns: none;
+  }
+  #contact-page .contact-title h4 {
+    font-size: 31px;
   }
   #about-image {
     padding: 100px;

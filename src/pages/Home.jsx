@@ -6,9 +6,10 @@ import projectData from '../../Projects.json'
 import Lenis from '@studio-freight/lenis'
 import { gsap } from "gsap";
 
-
 const Home = () => {
   const overlayRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const reversedProjectData = [...projectData].reverse();
 
   useEffect(() => {
     window.scrollTo({
@@ -54,16 +55,12 @@ const Home = () => {
 
   requestAnimationFrame(raf);
 
-  const [currentIndex, setCurrentIndex] = useState(0)
-
   const handleNextProject = () => {
-    const nextIndex = (currentIndex + 1) 
-    setCurrentIndex(nextIndex)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % reversedProjectData.length);
   }
 
   const handlePreviousProject = () => {
-    const nextIndex = (currentIndex - 1) 
-    setCurrentIndex(nextIndex)
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + reversedProjectData.length) % reversedProjectData.length);
   }
 
   const handleBackToTop = () => {
@@ -165,28 +162,28 @@ const Home = () => {
         <div className='project-info'>
           
           <div className='button-box'>
-            <button onClick={handlePreviousProject} disabled={currentIndex === 0} id='left'><BsArrowLeft/></button>
-            <button onClick={handleNextProject} disabled={currentIndex === projectData.length - 1} id='right'><BsArrowRight/></button>
+            <button onClick={handlePreviousProject} disabled={currentIndex === 0} id='left'><BsArrowLeft /></button>
+            <button onClick={handleNextProject} disabled={currentIndex === reversedProjectData.length - 1} id='right'><BsArrowRight /></button>
           </div>
 
           <div className='info-box'>
             <p>PROJECT</p>
-            <h5>{projectData[currentIndex].title}</h5>
+            <h5>{reversedProjectData[currentIndex].title}</h5>
           </div>
           <div className='info-box'>
             <p>TYPE</p>
-            <h5>{projectData[currentIndex].type}</h5>
+            <h5>{reversedProjectData[currentIndex].type}</h5>
           </div>
           <div className='info-box'>
             <p>DATE</p>
-            <h5>{projectData[currentIndex].date}</h5>
+            <h5>{reversedProjectData[currentIndex].date}</h5>
           </div>
 
         </div>
         <a href={`#/projects/${currentIndex}`} onClick={handleBackToTop}>
           <div className='project-image'>
-              <img src={projectData[currentIndex].image['main-image']} alt='main-image'/>
-              <img src={projectData[currentIndex].image['sub-image-1']} alt='sub-image'/>
+              <img src={reversedProjectData[currentIndex].image['main-image']} alt='main-image'/>
+              <img src={reversedProjectData[currentIndex].image['sub-image-1']} alt='sub-image'/>
           </div>
         </a>
       </div>

@@ -518,10 +518,10 @@ footer {
     .page-title-container {
         display: flex;
         align-items: end;
-        width: 100%;
+        justify-content: space-between;
+
         .links {
             display: flex;
-            width: 100%;
             justify-content: end;
             margin-bottom: 30px;
             margin-right: 40px;
@@ -549,7 +549,8 @@ footer {
     h2 {
         font-size: 40px;
         font-weight: 300;
-        padding: 80px 10px 20px 40px;
+        line-height: 42px;
+        padding: 80px 10px 26px 40px;
         text-transform: uppercase;
         width:max-content;
     }
@@ -577,6 +578,24 @@ footer {
             font-size: 16px;
             line-height: 28px;
             color: rgb(109, 108, 108);
+
+            .degree {
+                color: #242424;
+                font-weight: 500;
+            }
+        }
+
+        .mystory {
+            margin-bottom: 20px;
+        }
+
+        .education-section {
+            margin-bottom: 20px;
+        }
+
+        .cert-title {
+            color: #242424;
+            font-weight: 500;
         }
 
         h4 {
@@ -615,30 +634,22 @@ footer {
 }
 
 .contact-info {
-    padding: 15px 40px;
-
+    padding-top: 35px !important;
     .section {
-        height: 130px;
-        border-bottom: 1px solid $black-color;
-        padding-top: 15px;
-
+        margin-top: 30px;
         h4{
             margin-top: 10px;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             color: $grey-color;
             margin-bottom: 6px;
         }
 
         span {
-            font-size: 20px;
+            font-size: 16px;
         }
-    }
-
-    .contact-phone {
-        border: none;
     }
 
 }
