@@ -1041,7 +1041,8 @@ footer .copyright {
     max-width: 1300px;
   }
   .home-page .hero .hover-btn {
-    right: 100px;
+    right: 115px;
+    font-size: 18px;
   }
   .home-page .overlay {
     background-color: #191919;
@@ -1050,8 +1051,16 @@ footer .copyright {
   }
   .home-page .overlay .hover-btn2 {
     margin-bottom: 100px;
-    right: 100px;
+    right: 115px;
     bottom: 0;
+    font-size: 18px;
+  }
+  .home-page .home-section {
+    font-size: 30px;
+    margin: 70px 40px;
+  }
+  .home-page .home-section p {
+    width: 400px;
   }
   .home-page .home-aboutme {
     display: flex;
@@ -1062,20 +1071,45 @@ footer .copyright {
     padding: 80px 100px;
   }
   .home-page .home-aboutme .home-about-text {
-    position: relative;
-    margin: 80px 100px 80px 0px;
+    margin: 0px;
     width: 100%;
   }
   .home-page .home-aboutme .home-about-text p {
-    font-size: 29px;
-    line-height: 65px;
-    max-width: 700px;
+    font-size: 24px;
+    line-height: 45px;
+    max-width: 1000px;
+    border-left: 1px solid #191919;
+    padding-left: 70px;
+    margin-top: 70px;
   }
   .home-page .home-aboutme .home-about-text .button-container {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0;
+    justify-content: end;
+    width: 100%;
+  }
+  .home-page .home-aboutme .home-about-text .button-container button {
+    margin: 0px 100px 70px;
+    font-size: 18px;
+  }
+  .home-page .home-skills {
+    display: flex;
+  }
+  .home-page .home-skills .skills-list {
+    margin: 70px 0px;
+    border-left: 1px solid #191919;
+    padding-left: 70px;
+    font-size: 24px;
+  }
+  .home-page .home-skills .skills-list li p {
+    flex: none;
+    width: 300px;
+  }
+  .home-page .home-skills .skills-list li .project-link {
+    flex: none;
+    display: flex;
+  }
+  .home-page .home-skills .skills-list li .project-link a {
+    margin-right: 10px;
+    cursor: pointer;
   }
   .home-page .home-projects {
     grid-template-columns: 400px 1fr;
@@ -1097,6 +1131,7 @@ footer .copyright {
   }
   .home-page .home-projects .project-info .button-box {
     height: 51px;
+    width: 180px;
     margin-bottom: 50px;
   }
   .home-page .home-projects .project-image {

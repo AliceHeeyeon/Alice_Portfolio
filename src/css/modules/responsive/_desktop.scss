@@ -28,7 +28,8 @@
             }
 
             .hover-btn {
-                right: 100px;
+                right: 115px;
+                font-size: 18px;
             }
 
         }
@@ -40,10 +41,20 @@
     
             .hover-btn2 {
                 margin-bottom: 100px;
-                right: 100px;
+                right: 115px;
                 bottom: 0;
+                font-size: 18px;
             }
     
+        }
+
+        .home-section {
+            font-size: 30px;
+            margin: 70px 40px;
+            
+            p {
+                width: 400px;
+            }
         }
 
         .home-aboutme {
@@ -56,23 +67,53 @@
             }
 
             .home-about-text {
-                position: relative;
-                margin: 80px 100px 80px 0px;
+                margin: 0px;
                 width: 100%;
 
                 p {
-                    font-size: 29px;
-                    line-height: 65px;
-                    max-width: 700px;
+                    font-size: 24px;
+                    line-height: 45px;
+                    max-width: 1000px;
+                    border-left: 1px solid $black-color;
+                    padding-left: 70px;
+                    margin-top: 70px;
                 }
 
                 .button-container {
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    margin: 0;
+                   justify-content: end;
+                   width: 100%;
+
+                   button {
+                    margin: 0px 100px 70px;
+                    font-size: 18px;
+                   }
                 }
             }    
+        }
+
+        .home-skills {
+            display: flex;
+
+            .skills-list {
+                margin: 70px 0px;
+                border-left: 1px solid $black-color;
+                padding-left: 70px;
+                font-size: 24px;
+                li {
+                    p {
+                        flex: none;
+                        width: 300px;
+                    }
+                    .project-link {
+                        flex: none;
+                        display: flex;
+                        a {
+                            margin-right: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
 
         .home-projects {
@@ -96,6 +137,7 @@
     
                 .button-box {
                     height: 51px;
+                    width: 180px;
                     margin-bottom: 50px;
                 }
             }

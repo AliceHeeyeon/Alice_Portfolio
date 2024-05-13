@@ -89,7 +89,7 @@ const Home = () => {
       <div ref={overlayRef} className='hero overlay'>
         <h1>
         안녕하세요 저는
-        <span>사용자의 경험에 재미를 더하는 서비스를 지향하는  개발자입니다.</span>
+        <span>사용자의 경험을 디자인하는 개발자 김희연 입니다.</span>
         <button className='hover-btn2'>
           <Link to='/projects'>SEE PROJECTS<BsArrowRight/></Link>
         </button>
@@ -97,7 +97,9 @@ const Home = () => {
       </div>
 
       <div className='home-aboutme'>
-        <div className='home-section'>ABOUT ME</div>
+        <div className='home-section'>
+          <p>ABOUT ME</p>
+        </div>
         <div className='home-about-text'>
           <p>
           Since 2023, I have been immersed in web development, finding a particular passion for programming upon learning JavaScript. I enjoy both creating engaging frontend pages and delving into backend architecture, and I continuously seek opportunities to enhance my skills.
@@ -110,8 +112,10 @@ const Home = () => {
         </div>
       </div>
       
-      <div className='home-section'>Skills & Project Demo</div>
       <div className='home-skills'>
+        <div className='home-section'>
+          <p>Skills & Project Demo</p>
+        </div>
           <div className='skills-list'>
             <ul>
               <li>
