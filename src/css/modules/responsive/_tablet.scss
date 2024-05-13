@@ -163,14 +163,7 @@
 
      // Single Project, about me
     .single-page {
-
-        h2 {
-            font-size: 90px;
-        }
-
-        h4 {
-            font-size: 30px;
-        }
+        margin-bottom: 0px;
 
         .page-images {
             height: 640px;
@@ -179,36 +172,11 @@
             }
         }
 
-        .page-description {
+        .page-section{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            p {
-                font-size: 25px;
-                line-height: 45px;
-                margin-top: 0px;
-            }
-        }
-
-        .page-feature {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            ul {
-                li {
-                    font-size: 25px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-
-        .tryapp {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-
-            button {
-                width: fit-content;
-                margin: 0px 0px 50px;
-            }
+            grid-template-columns: 0.7fr 1fr;
+            border-bottom: 1px solid $black-color;
+            padding: 30px 40px;
         }
 
     }

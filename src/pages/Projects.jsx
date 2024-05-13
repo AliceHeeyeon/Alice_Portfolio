@@ -61,9 +61,6 @@ const Projects = () => {
       <div className='project-wrapper'>
         <div className='project-list'>
             {mappedProjects}
-            <div className='project-container'>
-                <p className='more-coming'>More Projects Coming up</p>
-            </div>
         </div>
         <div className='project-image'>
             <img src={currentImages.mainImage} alt="Main" className='main-image'/>

@@ -94,7 +94,7 @@ a {
 }
 .topnav .nav-mobile {
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 40px;
   border-bottom: 1px solid #191919;
   justify-content: space-between;
 }
@@ -524,15 +524,11 @@ footer .copyright {
   font-size: 20px;
 }
 .project-page .project-container {
-  padding: 40px;
+  padding: 15px 40px;
   border-bottom: 1px solid #191919;
 }
 .project-page .project-container a {
   color: #191919;
-}
-.project-page .project-container .more-coming {
-  font-size: 23px;
-  color: #8D8D8D;
 }
 .project-page .project-container .project {
   display: flex;
@@ -566,16 +562,18 @@ footer .copyright {
 }
 .project-page .project-container .project .skills-container {
   margin-right: 12px;
-  font-size: 15px;
+  font-size: 13px;
   color: #8D8D8D;
 }
 .project-page .project-container .project .skills-container p {
   width: 95px;
+  height: 16px;
 }
 .project-page .project-container .project h3 {
   font-size: 23px;
   font-weight: 300;
   transition: all 0.9s ease;
+  margin-left: 10px;
 }
 .project-page .project-container .project #project-show {
   padding: 6px 20px;
@@ -591,17 +589,44 @@ footer .copyright {
   display: none;
 }
 
+.single-page {
+  margin-bottom: 60px;
+}
+.single-page .page-title-container {
+  display: flex;
+  align-items: end;
+  width: 100%;
+}
+.single-page .page-title-container .links {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+.single-page .page-title-container .links .link-text {
+  display: none;
+}
+.single-page .page-title-container .links .link-btn a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-radius: 30px;
+  border: 1px solid #191919;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.single-page .page-title-container .links .link-btn a svg {
+  width: 30px;
+  height: 30px;
+}
 .single-page h2 {
   font-size: 40px;
   font-weight: 300;
-  padding: 80px 40px 20px;
+  padding: 80px 10px 20px 40px;
   text-transform: uppercase;
   width: -moz-max-content;
   width: max-content;
-}
-.single-page h4 {
-  font-size: 24px;
-  font-weight: 400;
 }
 .single-page .project-mockup-slides {
   cursor: none;
@@ -617,28 +642,24 @@ footer .copyright {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.single-page .page-description {
-  padding: 50px 40px;
+.single-page .page-section {
+  padding: 50px 40px 0px;
 }
-.single-page .page-description p {
-  color: #4c4c4c;
-  font-size: 20px;
-  line-height: 35px;
-  margin-top: 45px;
+.single-page .page-section .project-detail {
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(109, 108, 108);
 }
-.single-page .page-feature {
-  padding: 50px 40px 60px;
+.single-page .page-section h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
-.single-page .page-feature h4 {
-  margin-bottom: 45px;
-}
-.single-page .page-feature ul {
+.single-page .page-section ul {
   padding-left: 20px;
 }
-.single-page .page-feature ul li {
-  color: #4c4c4c;
-  font-size: 20px;
-  margin-bottom: 15px;
+.single-page .page-section ul li {
+  margin-bottom: 3px;
 }
 .single-page button {
   display: flex;
@@ -973,11 +994,8 @@ footer .copyright {
     font-size: 90px;
     margin: 0;
   }
-  .single-page h2 {
-    font-size: 90px;
-  }
-  .single-page h4 {
-    font-size: 30px;
+  .single-page {
+    margin-bottom: 0px;
   }
   .single-page .page-images {
     height: 640px;
@@ -985,31 +1003,11 @@ footer .copyright {
   .single-page .page-images img {
     height: 638px;
   }
-  .single-page .page-description {
+  .single-page .page-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .single-page .page-description p {
-    font-size: 25px;
-    line-height: 45px;
-    margin-top: 0px;
-  }
-  .single-page .page-feature {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .single-page .page-feature ul li {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  .single-page .tryapp {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .single-page .tryapp button {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0px 0px 50px;
+    grid-template-columns: 0.7fr 1fr;
+    border-bottom: 1px solid #191919;
+    padding: 30px 40px;
   }
   #about-image {
     height: 600px;
@@ -1150,15 +1148,11 @@ footer .copyright {
     position: relative;
   }
   .project-page .project-container {
-    padding: 40px;
+    padding: 20px 40px;
     border-bottom: 1px solid #191919;
   }
   .project-page .project-container a {
     color: #191919;
-  }
-  .project-page .project-container .more-coming {
-    font-size: 30px;
-    color: #8D8D8D;
   }
   .project-page .project-container .project {
     display: flex;
@@ -1202,6 +1196,9 @@ footer .copyright {
     font-size: 15px;
     color: #8D8D8D;
   }
+  .project-page .project-container .project .skills-container p {
+    height: 20px;
+  }
   .project-page .project-container .project h3 {
     font-size: 33px;
     font-weight: 300;
@@ -1215,9 +1212,6 @@ footer .copyright {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .single-project-page h2 {
-    font-size: 110px;
   }
   #contact-contents {
     display: grid;
@@ -1244,22 +1238,42 @@ footer .copyright {
   #contact-contents .contact-info .section span {
     font-size: 24px;
   }
-  .single-page h2 {
-    padding: 100px 100px 20px;
+  .single-page .page-title-container .links {
+    margin-bottom: 50px;
   }
-  .single-page .page-description {
-    padding: 50px 240px 50px 100px;
+  .single-page .page-title-container .links .link-text {
+    display: block;
+    margin-left: 5px;
+    font-size: 16px;
   }
-  .single-page .page-feature {
-    padding: 50px 240px 60px 100px;
-  }
-  .single-page .tryapp {
+  .single-page .page-title-container .links .link-btn a {
+    padding: 3px 12px;
+    margin-left: 8px;
+    width: 140px;
     display: flex;
     justify-content: center;
-    padding-left: 240px;
   }
-  .single-page .tryapp button {
-    margin: 0px 150px 60px 0px;
+  .single-page .page-title-container .links .link-btn a svg {
+    width: 40px;
+    height: 40px;
+  }
+  .single-page h2 {
+    font-size: 90px;
+    padding: 100px 40px 20px;
+  }
+  .single-page .page-section {
+    padding: 40px 80px;
+    grid-template-columns: 0.5fr 1fr;
+  }
+  .single-page .page-section .project-detail {
+    font-size: 21px;
+    line-height: 35px;
+  }
+  .single-page .page-section h4 {
+    font-size: 26px;
+  }
+  .single-page .page-section ul li {
+    margin-bottom: 6px;
   }
   #about-image {
     padding: 100px;

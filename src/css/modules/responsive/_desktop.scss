@@ -166,16 +166,11 @@
         }
     
         .project-container {
-            padding: 40px;
+            padding: 20px 40px;
             border-bottom: 1px solid $black-color;
         
             a {
                 color: $black-color;
-            }
-    
-            .more-coming {
-                font-size: 30px;
-                color: $grey-color;
             }
     
             .project {
@@ -203,6 +198,10 @@
                     margin-right: 40px;
                     font-size: 15px;
                     color: $grey-color;
+
+                    p {
+                        height: 20px;
+                    }
                 }
     
                 h3 {
@@ -225,14 +224,6 @@
         }
     }
 
-    // Single Project
-    .single-project-page {
-
-        h2 {
-            font-size: 110px;
-        }
-
-    }
 
     // Contact me
     #contact-contents {
@@ -270,28 +261,54 @@
     // Single Project, about me
     .single-page {
 
-        h2 {
-            padding: 100px 100px 20px;
-        }
+        .page-title-container {
+            .links {
+                margin-bottom: 50px;
 
-        .page-description {
-            padding: 50px 240px 50px 100px;
-        }
-
-        .page-feature {
-            padding: 50px 240px 60px 100px;
-        }
-
-        .tryapp {
-            display: flex;
-            justify-content: center;
-            padding-left: 240px;
-
-            button {
-                margin: 0px 150px 60px 0px;
+                .link-text {
+                    display: block;
+                    margin-left: 5px;
+                    font-size: 16px;
+                }
+            
+                .link-btn a {
+                    padding: 3px 12px;
+                    margin-left: 8px;
+                    width: 140px;
+                    display: flex;
+                    justify-content: center;
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
             }
         }
 
+        h2 {
+            font-size: 90px;
+            padding: 100px 40px 20px;
+        }
+
+       .page-section {
+            padding: 40px 80px;
+            grid-template-columns: 0.5fr 1fr;
+
+            .project-detail {
+                font-size: 21px;
+                line-height: 35px;
+            }
+
+            h4 {
+                font-size: 26px;
+            }
+
+            ul li{
+                margin-bottom: 6px;
+            }
+       }
+
+       
     }
 
     // About

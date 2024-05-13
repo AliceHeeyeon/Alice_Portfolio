@@ -102,7 +102,7 @@ a {
 
     .nav-mobile {
         display: flex;
-        padding: 20px 30px;
+        padding: 20px 40px;
         border-bottom: 1px solid $black-color;
         justify-content: space-between;
 
@@ -454,16 +454,11 @@ footer {
     }
 
     .project-container {
-        padding: 40px;
+        padding: 15px 40px;
         border-bottom: 1px solid $black-color;
 
         a {
             color: $black-color;
-        }
-
-        .more-coming {
-            font-size: 23px;
-            color: $grey-color;
         }
 
         .project {
@@ -479,18 +474,20 @@ footer {
 
             .skills-container {
                 margin-right: 12px;
-                font-size: 15px;
+                font-size: 13px;
                 color: $grey-color;
 
                 p {
                     width: 95px;
+                    height: 16px;
                 }
             }
 
             h3 {
                 font-size: 23px;
                 font-weight: 300;
-                transition: all 0.9s ease;     
+                transition: all 0.9s ease;
+                margin-left: 10px;     
             }
 
             #project-show {
@@ -517,18 +514,44 @@ footer {
 
 // Single Project, About me
 .single-page {
+    margin-bottom: 60px;
+    .page-title-container {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        .links {
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            margin-bottom: 30px;
+            margin-right: 40px;
 
+            .link-text {
+                display: none;
+            }
+
+            .link-btn a{
+                display: flex;
+                align-items: center;
+                padding: 3px;
+                border-radius: 30px;
+                border: 1px solid $black-color;
+                margin-left: 5px;
+                cursor: pointer;
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
     h2 {
         font-size: 40px;
         font-weight: 300;
-        padding: 80px 40px 20px;
+        padding: 80px 10px 20px 40px;
         text-transform: uppercase;
         width:max-content;
-    }
-
-    h4 {
-        font-size: 24px;
-        font-weight: 400;
     }
 
     .project-mockup-slides {
@@ -547,31 +570,25 @@ footer {
         }
     }
 
-    .page-description {
-        padding: 50px 40px;
-
-        p {
-            color: #4c4c4c;
-            font-size: 20px;
-            line-height: 35px;
-            margin-top: 45px;
+    .page-section {
+        padding: 50px 40px 0px;
+        
+        .project-detail {
+            font-size: 16px;
+            line-height: 28px;
+            color: rgb(109, 108, 108);
         }
-    }
-
-    .page-feature {
-        padding: 50px 40px 60px;
 
         h4 {
-            margin-bottom: 45px;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 15px;
         }
 
         ul {
             padding-left: 20px;
-
             li {
-                color: #4c4c4c;
-                font-size: 20px;
-                margin-bottom: 15px;
+                margin-bottom: 3px;
             }
         }
             
