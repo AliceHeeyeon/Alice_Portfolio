@@ -180,7 +180,7 @@ const Home = () => {
           </div>
 
         </div>
-        <a href={`#/projects/${currentIndex}`} onClick={handleBackToTop}>
+        <a href={`#/projects/${reversedProjectData[currentIndex].id}`} onClick={handleBackToTop}>
           <div className='project-image'>
               <img src={reversedProjectData[currentIndex].image['main-image']} alt='main-image'/>
               <img src={reversedProjectData[currentIndex].image['sub-image-1']} alt='sub-image'/>
