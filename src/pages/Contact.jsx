@@ -28,14 +28,14 @@ const Contact = () => {
                 <p>LINKEDIN</p>
                 <span>linkedin.com/in/alice-heeyeon-kim/</span>
             </div>
-            <div className='contact-instagram section'>
-                <p>INSTAGRAM</p>
-                <span>@hinneeee</span>
-            </div>
             <div className='contact-github section'>
                 <p>GITHUB</p>
                 <span>github.com/AliceHeeyeon</span>
             </div>
+            <div className='contact-instagram section'>
+                <p>MEDIUM</p>
+                <span>medium.com/@lovelyalice.kim</span>
+            </div> 
         </div>
       </div>
     </div>

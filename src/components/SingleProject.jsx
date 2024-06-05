@@ -11,15 +11,20 @@ import LanguageIcon from '@mui/icons-material/Language';
 import "swiper/css";
 
 const extractImages = (imgObj) => {
-    return Object.values(imgObj)
+  return imgObj ? Object.values(imgObj) : [];
 }
 
 const SingleProject = () => {
     const {id} = useParams()
-    const currentImages =  extractImages(projectData[id].image)
-    const featuresArray = projectData[id].features
-    const toolsArray = projectData[id].tools
-    const projectUrl = projectData[id].url.project
+    const project = projectData[id];
+
+  if (!project) {
+    return <div>Project not found</div>;
+  }
+    const currentImages = extractImages(project.image);
+    const featuresArray = project.features || [];
+    const toolsArray = project.tools || [];
+    const projectUrl = project.url?.project;
   
     useEffect(() => {
       const cursor = document.querySelector('.swipe-indicator');
@@ -86,10 +91,10 @@ const SingleProject = () => {
     <div className='single-page page-container'>
       <div className='swipe-indicator'></div>
       <div className='page-title-container'>
-        <h2>{projectData[id].title}</h2>
+        <h2>{project.title}</h2>
         <div className='links'> 
           <div className='link-btn'>
-            <Link to={projectData[id].url.github}>
+            <Link to={project.url.github}>
               <GitHubIcon />
               <span className="link-text">GITHUB</span>
             </Link>
@@ -114,7 +119,7 @@ const SingleProject = () => {
       </div>
       <div className='page-description page-section'>
         <h4>PROJECT OVERVIEW</h4>
-        <div className='project-detail'>{projectData[id].description}</div>
+        <div className='project-detail'>{project.description}</div>
       </div>
       <div className='page-tools page-section'>
         <h4>TOOLS</h4>
@@ -126,15 +131,15 @@ const SingleProject = () => {
       </div>
       <div className='page-challenges page-section'>
         <h4>CHALLENGES</h4>
-        <div className='project-detail'>{projectData[id].challenges}</div>
+        <div className='project-detail'>{project.challenges}</div>
       </div>
       <div className='page-troubleshooting page-section'>
         <h4>TROUBLESHOOTING</h4>
-        <div className='project-detail'>{projectData[id].troubleshooting}</div>
+        <div className='project-detail'>{project.troubleshooting}</div>
       </div>
       <div className='page-outcome page-section'>
         <h4>OUTCOME</h4>
-        <div className='project-detail'>{projectData[id].outcome}</div>
+        <div className='project-detail'>{project.outcome}</div>
       </div>
       
     </div>

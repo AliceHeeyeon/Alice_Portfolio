@@ -149,9 +149,9 @@ const Home = () => {
                 </div>
               </li>
               <li>
-                <p>AWS Cloud</p>
+                <p>MySQL, AWS EC2</p>
                 <div className='project-link'>
-                  <a href='https://www.canva.com/design/DAF7alBjafA/lFAWMqKyHsqz05Xz0ZuRAg/view?utm_content=DAF7alBjafA&utm_campaign=designshare&utm_medium=link&utm_source=editor' target='_blank' rel='noopener noreferrer'>Jedi Mission Log</a>
+                  <a href='https://ottgeeks.vercel.app/' target='_blank' rel='noopener noreferrer'>OTTGEEKS</a>
                 </div>
               </li>
             </ul>
