@@ -36,13 +36,13 @@ const Footer = ({closeMethod}) => {
         <div className='footer-socialmedia'>
           <ul>
             <li>
-              <Link to='https://www.instagram.com/hinneeee/'>INSTAGRAM</Link> 
-            </li>
-            <li>
               <Link to='http://www.linkedin.com/in/alice-heeyeon-kim'>LINKEDIN</Link> 
             </li>
             <li>
               <Link to='https://github.com/AliceHeeyeon'>GITHUB</Link> 
+            </li>
+            <li>
+              <Link to='https://medium.com/@lovelyalice.kim'>MEDIUM</Link> 
             </li>
           </ul>
         </div>

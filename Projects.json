@@ -106,8 +106,7 @@
     "troubleshooting": "I searched the AWS Documentation and found a solution for configuring HTTP to HTTPS redirection using Route53.",
     "outcome": "The website now boasts a modern aesthetic suitable for an art gallery. The contents are easily managed via a separate AWS domain.",
     "url" : {
-        "github" : "https://github.com/AliceHeeyeon/Kiwi_Art_House",
-        "project" : "https://redesign-kiwi-art-house.vercel.app/"
+        "github" : "https://github.com/AliceHeeyeon/Kiwi_Art_House"
     }
 },
 {
@@ -176,5 +175,28 @@
     "url" : {
         "github" : "https://github.com/AliceHeeyeon/31thoughts",
         "project" : "https://www.31thoughts.com/"
+    }
+},
+{
+    "id": 8,
+    "title" : "OTTGEEKS",
+    "type" : "individual",
+    "date" : "MAY 2024",
+    "skills" : ["MySQL", "Node js"],
+    "tools" : ["AWS EC2", "MySQL", "Ubuntu", "Nginx", "Express"],
+    "description" : "A platform for sharing reviews of content series available on OTT services.",
+    "features" : ["Managed database via MySQL and stored within an AWS EC2", "User authentication for creating a review", "Moving posters by detecting mouse cursor"],
+    "image" : {
+        "main-image": "../../image/ottgeeks1.png",
+        "sub-image-1": "../../image/ottgeeks2.png",
+        "sub-image-2": "../../image/ottgeeks3.png"
+
+    },
+    "challenges" : "Faced difficulties installing MySQL on an AWS EC2 instance using PuTTY due to unfamiliarity with terminal commands.",
+    "troubleshooting": "Overcame this challenge by studying documentation and tutorials",
+    "outcome": "I found that many of documentation and tutorials were outdated, so I created a blog post to help others who may face the same issue. This project is now working well as I intended.",
+    "url" : {
+        "github" : "https://github.com/AliceHeeyeon/ottgeeks",
+        "project" : "https://ottgeeks.vercel.app/"
     }
 }]
