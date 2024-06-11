@@ -118,8 +118,7 @@ const Home = () => {
               <li>
                 <p>JavaScript, React</p>
                 <div className='project-link'>
-                  <a href='https://www.31thoughts.com' target='_blank' rel='noopener noreferrer'>31thoughts,</a>
-                  <a href='https://staysavvy.vercel.app/' target='_blank' rel='noopener noreferrer'>Staysavvy</a>
+                  <a href='https://www.31thoughts.com' target='_blank' rel='noopener noreferrer'>31thoughts</a>
                 </div>
               </li>
               <li>
@@ -133,12 +132,6 @@ const Home = () => {
                 <div className='project-link'>
                   <a href='https://github.com/AliceHeeyeon/WUX-Project' target='_blank' rel='noopener noreferrer'>
                   WUX Project</a>
-                </div>
-              </li>
-              <li>
-                <p>WordPress</p>
-                <div className='project-link'>
-                  <a href='https://redesign-kiwi-art-house.vercel.app/' target='_blank' rel='noopener noreferrer'>Kiwi Art House</a>
                 </div>
               </li>
               <li>

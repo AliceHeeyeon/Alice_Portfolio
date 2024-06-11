@@ -89,27 +89,6 @@
     }
 },
 {
-    "id": 4,
-    "title" : "Kiwi Art House",
-    "type" : "individual",
-    "date" : "NOV 2023",
-    "skills" : ["react", "WordPress"],
-    "tools" : ["JavaScript", "PHP", "React", "WordPress", "CSS", "SASS"],
-    "description" : "Redesigning the 'Kiwi Art House Gallery' website and developing it using CMS and React.",
-    "features" : ["Custom WordPress Theme", "Easy contents management", "Customisable data field"],
-    "image" : {
-        "main-image": "../../image/kiwiarthouse1.png",
-        "sub-image-1": "../../image/kiwiarthouse2.png",
-        "sub-image-2": "../../image/kiwiarthouse3.png"
-    },
-    "challenges" : "I used AWS Lightsail to deploy WordPress content, but I couldn't access the deployed endpoint because the domain from AWS used 'http'",
-    "troubleshooting": "I searched the AWS Documentation and found a solution for configuring HTTP to HTTPS redirection using Route53.",
-    "outcome": "The website now boasts a modern aesthetic suitable for an art gallery. The contents are easily managed via a separate AWS domain.",
-    "url" : {
-        "github" : "https://github.com/AliceHeeyeon/Kiwi_Art_House"
-    }
-},
-{
     "id": 5,
     "title" : "Smart Power",
     "type" : "individual",
