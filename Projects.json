@@ -96,7 +96,7 @@
     "skills" : ["MUI", "Tailwind"],
     "tools" : ["React", "JavaScript", "Material UI", "Tailwind CSS"],
     "description" : "Energy usage application for energy provider. It visualize data usage for daily, monthly and assigned time range.",
-    "features" : ["Custom WordPress Theme", "Easy contents management", "Customisable data field"],
+    "features" : ["Data visualization", "Easy usage tracking", "Customisable date range selection"],
     "image" : {
         "main-image": "../../image/smartpower1.png",
         "sub-image-1": "../../image/smartpower2.png",
